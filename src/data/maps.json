@@ -1,0 +1,162 @@
+[
+  {
+    "id": "alamo",
+    "name": "Alamo",
+    "file": "alamo.jpg"
+  },
+  {
+    "id": "azuchi-castle",
+    "name": "Azuchi Castle",
+    "file": "azuchi-castle.jpg"
+  },
+  {
+    "id": "baskerville-manor",
+    "name": "Baskerville Manor",
+    "file": "baskerville-manor.jpg"
+  },
+  {
+    "id": "fayrlund-forest",
+    "name": "Fayrlund Forest",
+    "file": "fayrlund-forest.jpg"
+  },
+  {
+    "id": "globe-theatre",
+    "name": "Globe Theatre",
+    "file": "globe-theatre.jpg"
+  },
+  {
+    "id": "hanging-gardens",
+    "name": "Hanging Gardens",
+    "file": "hanging-gardens.jpg"
+  },
+  {
+    "id": "helicarrier",
+    "name": "Helicarrier",
+    "file": "helicarrier.jpg"
+  },
+  {
+    "id": "hells-kitchen",
+    "name": "Hell’s Kitchen",
+    "file": "hells-kitchen.jpg"
+  },
+  {
+    "id": "heorot",
+    "name": "Heorot",
+    "file": "heorot.jpg"
+  },
+  {
+    "id": "kaer-morhen",
+    "name": "Kaer Morhen",
+    "file": "kaer-morhen.jpg"
+  },
+  {
+    "id": "king-solomons-mine",
+    "name": "King Solomon’s Mine",
+    "file": "king-solomons-mine.jpg"
+  },
+  {
+    "id": "marmoreal",
+    "name": "Marmoreal",
+    "file": "marmoreal.jpg"
+  },
+  {
+    "id": "mcminnville",
+    "name": "Mcminnville",
+    "file": "mcminnville.jpg"
+  },
+  {
+    "id": "naglfar",
+    "name": "Naglfar",
+    "file": "naglfar.jpg"
+  },
+  {
+    "id": "navy-pier",
+    "name": "Navy Pier",
+    "file": "navy-pier.jpg"
+  },
+  {
+    "id": "point-pleasant",
+    "name": "Point Pleasant",
+    "file": "point-pleasant.jpg"
+  },
+  {
+    "id": "raptor-paddock",
+    "name": "Raptor Paddock",
+    "file": "raptor-paddock.jpg"
+  },
+  {
+    "id": "sanctum-sanctorum",
+    "name": "Sanctum Sanctorum",
+    "file": "sanctum-sanctorum.jpg"
+  },
+  {
+    "id": "sherwood-forest",
+    "name": "Sherwood Forest",
+    "file": "sherwood-forest.jpg"
+  },
+  {
+    "id": "streets-of-novigrad",
+    "name": "Streets Of Novigrad",
+    "file": "streets-of-novigrad.jpg"
+  },
+  {
+    "id": "sunnydale-high",
+    "name": "Sunnydale High",
+    "file": "sunnydale-high.jpg"
+  },
+  {
+    "id": "t-rex-paddock",
+    "name": "T. Rex Paddock",
+    "file": "t-rex-paddock.jpg"
+  },
+  {
+    "id": "the-bronze",
+    "name": "The Bronze",
+    "file": "the-bronze.jpg"
+  },
+  {
+    "id": "the-raft",
+    "name": "The Raft",
+    "file": "the-raft.jpg"
+  },
+  {
+    "id": "the-white-house",
+    "name": "The White House",
+    "file": "the-white-house.jpg"
+  },
+  {
+    "id": "thrilla-in-manilla",
+    "name": "Thrilla In Manilla",
+    "file": "thrilla-in-manilla.jpg"
+  },
+  {
+    "id": "tsing-shan-monastery",
+    "name": "Tsing Shan Monastery",
+    "file": "tsing-shan-monastery.jpg"
+  },
+  {
+    "id": "venice",
+    "name": "Venice",
+    "file": "venice.jpg"
+  },
+  {
+    "id": "yukon",
+    "name": "Yukon",
+    "file": "yukon.jpg"
+  },
+  {
+    "id": "soho",
+    "name": "Soho",
+    "file": "soho.jpg"
+  },
+  {
+    "id": "santas-workshop",
+    "name": "Santa's Workshop",
+    "file": "santas-workshop.jpg"
+  },
+  {
+    "id": "sarpedon",
+    "name": "Sarpedon",
+    "file": "sarpedon.jpg"
+  }
+]
