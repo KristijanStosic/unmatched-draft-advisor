@@ -29,6 +29,7 @@ export default function App() {
   const [isSaved, setIsSaved] = useState(true);
   const [statsOpen, setStatsOpen] = useState(false);
   const [matchupsOpen, setMatchupsOpen] = useState(false);
+  const [draftBans, setDraftBans] = useState([]);
   const [statsMode, setStatsMode] = useState("roster");
 
   useEffect(() => {
@@ -222,6 +223,7 @@ export default function App() {
         </div>
         {screen === "maps" ? null : screen === "simulator" ? (
           <DraftFlow
+            onBannedChange={setDraftBans}
             heroes={heroes}
             available={validRoster}
             index={index}
@@ -290,6 +292,8 @@ export default function App() {
         )}
       </main>
       <MatchupExplorer
+        available={validRoster}
+        banned={draftBans}
         open={matchupsOpen}
         onOpenChange={setMatchupsOpen}
         heroes={heroes}

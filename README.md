@@ -1,5 +1,15 @@
 # Unmatched Draft Advisor — Netlify
 
+## Hero vs Available Pool
+
+U Matchup Exploreru izaberi zasebnu opciju **Hero vs Available Pool**, zatim heroja iz dropdowna. Tabela prikazuje Opponent, dinamičku kolonu `<selected hero> WR`, Opponent WR i Games. Protivnici su trenutno selektovani Available Heroes iz rostera, bez izabranog heroja i banova iz aktivnog simulatora (pre-ban, opponent ban i self-ban). Dropdown prikazuje samo heroje iz trenutnog Available Heroes poola, bez banovanih. Ako izabrani heroj više nije u poolu, prikaz se vraća na izbor heroja.
+
+Rezultati koriste postojeći dvosmerni CSV indeks: Hero B perspektiva dobija preostale pobede, a Opponent WR je 100 minus WR izabranog heroja. Sortiranje je po neobrađenom WR opadajuće; nedostajući rezultati su poslednji i prikazuju N/A u obe WR kolone i Games. Promene rostera, banovi, Undo i Reset Draft osvežavaju pool. Izlazak iz simulatora resetuje njegove banove kao i sam simulator.
+
+Select All i sve prethodne funkcije su zadržane. ZIP uključuje kompletan izvorni projekat, podatke, slike i spreman `dist/` build; `node_modules` nije uključen.
+
+Provera ove verzije: `npm test` — 23/23 uspešno; `npm run build` — uspešno. `npm run lint` prijavljuje pet postojećih grešaka u neizmenjenim UI fajlovima (badge, button, card, dialog, input); izmenjeni fajlovi prolaze ESLint proveru.
+
 ## Pokretanje i build
 Node.js 22.12+ (preporuka: Node 22 LTS).
 
@@ -30,3 +40,4 @@ Roster, Draft Simulator sa pre-banovima, preporukama i WR, generator mapa, Overa
 - 6 heroja: ručni pre-banovi pre početka, mora ostati najmanje 12 heroja, 12 naizmeničnih pickova, završni 6v6.
 
 Undo i Reset Draft ostaju dostupni. Preporuke koriste postojeće formule i postojeće Overall WR fallback ponašanje.
+

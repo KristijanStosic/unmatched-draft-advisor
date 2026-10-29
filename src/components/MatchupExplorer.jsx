@@ -7,13 +7,25 @@ import {
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { matchup } from "@/lib/draftStrategy";
-import { closeMatchups } from "@/lib/matchupExplorer";
+import { closeMatchups, heroPoolMatchups } from "@/lib/matchupExplorer";
 
 const pct = (n) => (n == null ? "N/A" : `${n.toFixed(1)}%`);
 const selectClass =
   "w-full rounded border border-zinc-700 bg-zinc-950 p-2 text-sm";
 
-export default function MatchupExplorer({ open, onOpenChange, heroes, index }) {
+export default function MatchupExplorer({ open, onOpenChange, heroes, index, available, banned }) {
+  const [poolHero, setPoolHero] = useState("");
+  const poolHeroes = useMemo(
+    () => heroes
+      .filter((hero) => available.includes(hero.slug) && !banned.includes(hero.slug))
+      .sort((a, b) => a.name.localeCompare(b.name)),
+    [heroes, available, banned],
+  );
+  const selectedHero = poolHeroes.find((hero) => hero.slug === poolHero);
+  const poolRows = useMemo(
+    () => heroPoolMatchups(heroes, index, poolHero, available, banned),
+    [heroes, index, poolHero, available, banned],
+  );
   const [mode, setMode] = useState("pair");
   const [first, setFirst] = useState("");
   const [second, setSecond] = useState("");
@@ -44,6 +56,7 @@ export default function MatchupExplorer({ open, onOpenChange, heroes, index }) {
         <div className="flex flex-wrap gap-2">
           {[
             ["pair", "Hero vs Hero"],
+            ["pool", "Hero vs Available Pool"],
             ["close", "Close matchups · 45–55%"],
           ].map(([value, title]) => (
             <Button
@@ -118,6 +131,51 @@ export default function MatchupExplorer({ open, onOpenChange, heroes, index }) {
               </p>
             )}
           </div>
+        ) : mode === "pool" ? (
+          <section className="space-y-4" aria-label="Hero vs Available Pool">
+            <h2 className="text-lg font-semibold">Hero vs Available Pool</h2>
+            <label className="block space-y-1 text-sm">
+              <span>Selected hero</span>
+              <select className={selectClass} value={selectedHero ? poolHero : ""}
+                onChange={(event) => setPoolHero(event.target.value)}>
+                <option value="">Choose a hero</option>
+                {poolHeroes.map((hero) => (
+                  <option key={hero.slug} value={hero.slug}>{hero.name}</option>
+                ))}
+              </select>
+            </label>
+            <p className="text-sm text-zinc-400">
+              Opponents come from Available Heroes in your roster, excluding draft bans and the selected hero.
+              Sorted by the selected hero's WR, highest first; missing results appear last as N/A.
+            </p>
+            {selectedHero ? (
+              <>
+                <div className="overflow-x-auto">
+                  <table className="w-full text-sm">
+                    <thead>
+                      <tr className="border-b border-zinc-700 text-left">
+                        <th scope="col" className="p-2">Opponent</th>
+                        <th scope="col" className="p-2 text-right">{selectedHero.name} WR</th>
+                        <th scope="col" className="p-2 text-right">Opponent WR</th>
+                        <th scope="col" className="p-2 text-right">Games</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {poolRows.map((row) => (
+                        <tr key={row.opponent.slug} className="border-b border-zinc-800">
+                          <td className="p-2">{row.opponent.name}</td>
+                          <td className="p-2 text-right text-amber-300">{pct(row.rate)}</td>
+                          <td className="p-2 text-right text-amber-300">{pct(row.oppositeRate)}</td>
+                          <td className="p-2 text-right">{row.games ?? "N/A"}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+                {!poolRows.length && <p className="text-sm text-zinc-400">No other available heroes. Select heroes in Roster or adjust draft bans.</p>}
+              </>
+            ) : <p className="text-sm text-zinc-400">Choose a hero to see results against the available pool.</p>}
+          </section>
         ) : (
           <div className="space-y-4">
             <p className="text-sm text-zinc-400">
@@ -224,9 +282,10 @@ export default function MatchupExplorer({ open, onOpenChange, heroes, index }) {
           </div>
         )}
         <p className="text-xs text-zinc-500">
-          Uses all heroes in the currently loaded Matchups CSV, independently of
-          your roster and draft bans. Small game counts can give less reliable
-          estimates.
+          {mode === "pool"
+            ? "Uses the current roster pool without banned opponents."
+            : "Uses all heroes in the currently loaded Matchups CSV, independently of your roster and draft bans."}
+          {" "}Small game counts can give less reliable estimates.
         </p>
       </DialogContent>
     </Dialog>

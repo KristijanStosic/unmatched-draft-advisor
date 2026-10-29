@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { RotateCcw, Undo2, Info } from "lucide-react";
@@ -77,6 +77,7 @@ export default function DraftFlow({
   available,
   index,
   overall,
+  onBannedChange,
 }) {
   const [format, setFormat] = useState(4);
   const [manualBans, setManualBans] = useState([]);
@@ -84,6 +85,13 @@ export default function DraftFlow({
   const [started, setStarted] = useState(false);
   const [history, setHistory] = useState([]);
   const [search, setSearch] = useState("");
+  useEffect(() => {
+    onBannedChange([
+      ...(format === 6 ? manualBans : []),
+      ...history.filter((step) => step.phase !== "pick").map((step) => step.slug),
+    ]);
+  }, [format, manualBans, history, onBannedChange]);
+  useEffect(() => () => onBannedChange([]), [onBannedChange]);
   const names = useMemo(
     () => new Map(heroes.map((h) => [h.slug, h.name])),
     [heroes],

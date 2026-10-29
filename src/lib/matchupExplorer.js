@@ -1,5 +1,18 @@
 import { matchup } from "./draftStrategy.js";
 
+export function heroPoolMatchups(heroes, index, heroSlug, available, banned = []) {
+  if (!heroes.some((hero) => hero.slug === heroSlug)) return [];
+  const pool = new Set(available);
+  const excluded = new Set(banned);
+  return heroes
+    .filter((hero) => hero.slug !== heroSlug && pool.has(hero.slug) && !excluded.has(hero.slug))
+    .map((opponent) => {
+      const data = matchup(index, heroSlug, opponent.slug);
+      return { opponent, rate: data?.rate ?? null, oppositeRate: data ? 100 - data.rate : null, games: data?.games ?? null };
+    })
+    .sort((a, b) => (b.rate ?? -1) - (a.rate ?? -1) || a.opponent.name.localeCompare(b.opponent.name));
+}
+
 export function closeMatchups(heroes, index, heroSlug = "", minimumGames = 1) {
   const rows = [];
   for (let i = 0; i < heroes.length; i++) {
