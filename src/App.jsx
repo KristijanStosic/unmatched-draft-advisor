@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
-import { Swords, Search, BarChart3 } from "lucide-react";
+import { Swords, Search, BarChart3, CheckCheck } from "lucide-react";
 import RandomMapGenerator from "@/components/RandomMapGenerator";
 import HeroCard from "@/components/HeroCard";
 import RosterPanel from "@/components/RosterPanel";
@@ -93,6 +93,11 @@ export default function App() {
     );
     setIsSaved(false);
   }
+  function selectAllHeroes() {
+    setRoster(heroes.map((hero) => hero.slug));
+    setIsSaved(false);
+  }
+
   function save() {
     if (saveRoster(roster)) {
       setIsSaved(true);
@@ -233,14 +238,25 @@ export default function App() {
                 <h2 className="text-xl font-bold">
                   Available heroes
                 </h2>
-                <div className="relative w-full sm:max-w-xs">
-                  <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-zinc-500" />
+                <div className="flex flex-wrap items-center gap-2">
+                  <Button
+                    className="cursor-pointer"
+                    variant="outline"
+                    onClick={selectAllHeroes}
+                    disabled={heroes.length === 0 || validRoster.length === heroes.length}
+                  >
+                    <CheckCheck className="mr-2 h-4 w-4" />
+                    Select All
+                  </Button>
+                  <div className="relative w-full sm:w-64">
+                    <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-zinc-500" />
                   <Input
                     value={search}
                     onChange={(e) => setSearch(e.target.value)}
                     placeholder="Search heroes..."
                     className="border-zinc-700 bg-zinc-900 pl-9"
                   />
+                  </div>
                 </div>
               </div>
               {filtered.length ? (

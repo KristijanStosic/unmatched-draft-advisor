@@ -36,7 +36,7 @@ export default function StatisticsDialog({
   const selectedRow = rows.find((h) => h.slug === selected);
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="max-h-[90vh] overflow-y-auto border-amber-900/50 bg-slate-800 text-zinc-100 sm:max-w-3xl">
+      <DialogContent className="max-h-[90vh] overflow-y-auto border-amber-900/50 bg-zinc-800 text-zinc-100 sm:max-w-3xl">
         <DialogHeader>
           <DialogTitle>Hero Statistics</DialogTitle>
         </DialogHeader>
