@@ -1,13 +1,14 @@
 ﻿Game System,Hero A,Hero A Slug,Hero B,Hero B Slug,Games,Hero A Wins,Hero A Win Rate %
-Unmatched,Abe Sapien,abe-sapien,Hellboy,hellboy,8,2,25
-Unmatched,Abe Sapien,abe-sapien,Liz Sherman,liz-sherman,12,6,50
+Unmatched,Abe Sapien,abe-sapien,Hellboy,hellboy,10,4,40
+Unmatched,Abe Sapien,abe-sapien,Liz Sherman,liz-sherman,14,7,50
+Unmatched,Abe Sapien,abe-sapien,Luke Cage,luke-cage,1,0,0
 Unmatched,Abe Sapien,abe-sapien,Pandora,pandora,1,0,0
 Unmatched,Achilles,achilles,Alice,alice,105,74,70.48
 Unmatched,Achilles,achilles,Ancient Leshen,ancient-leshen,53,27,50.94
 Unmatched,Achilles,achilles,Angel,angel,3,3,100
 Unmatched,Achilles,achilles,Annie Christmas,annie-christmas,76,43,56.58
 Unmatched,Achilles,achilles,Beowulf,beowulf,59,36,61.02
-Unmatched,Achilles,achilles,Bigfoot,bigfoot,212,101,47.64
+Unmatched,Achilles,achilles,Bigfoot,bigfoot,213,101,47.42
 Unmatched,Achilles,achilles,Black Panther,black-panther,66,38,57.58
 Unmatched,Achilles,achilles,Bloody Mary,bloody-mary,33,24,72.73
 Unmatched,Achilles,achilles,Bruce Lee,bruce-lee,73,48,65.75
@@ -16,18 +17,18 @@ Unmatched,Achilles,achilles,Bullseye,bullseye,63,33,52.38
 Unmatched,Achilles,achilles,Chupacabra,chupacabra,31,25,80.65
 Unmatched,Achilles,achilles,Cloak & Dagger,cloak-dagger,18,10,55.56
 Unmatched,Achilles,achilles,Daredevil,daredevil,125,88,70.4
-Unmatched,Achilles,achilles,Donatello,donatello,29,15,51.72
+Unmatched,Achilles,achilles,Donatello,donatello,31,16,51.61
 Unmatched,Achilles,achilles,Dr. Jill Trent,dr-jill-trent,119,62,52.1
 Unmatched,Achilles,achilles,Dr. Sattler,dr-sattler,52,28,53.85
 Unmatched,Achilles,achilles,Dracula,dracula,135,65,48.15
 Unmatched,Achilles,achilles,Elektra,elektra,38,6,15.79
-Unmatched,Achilles,achilles,Eredin,eredin,65,29,44.62
+Unmatched,Achilles,achilles,Eredin,eredin,66,29,43.94
 Unmatched,Achilles,achilles,George Washington,george-washington,3,2,66.67
 Unmatched,Achilles,achilles,Geralt of Rivia,geralt-of-rivia,72,53,73.61
 Unmatched,Achilles,achilles,Ghost Rider,ghost-rider,31,25,80.65
 Unmatched,Achilles,achilles,Golden Bat,golden-bat,100,47,47
 Unmatched,Achilles,achilles,Hamlet,hamlet,11,6,54.55
-Unmatched,Achilles,achilles,Houdini,houdini,153,81,52.94
+Unmatched,Achilles,achilles,Houdini,houdini,154,82,53.25
 Unmatched,Achilles,achilles,InGen,ingen,77,9,11.69
 Unmatched,Achilles,achilles,Invisible Man,invisible-man,52,28,53.85
 Unmatched,Achilles,achilles,Jekyll & Hyde,jekyll-hyde,2,2,100
@@ -37,30 +38,30 @@ Unmatched,Achilles,achilles,Krang,krang,12,5,41.67
 Unmatched,Achilles,achilles,Leonardo,leonardo,18,8,44.44
 Unmatched,Achilles,achilles,Little Red Riding Hood,little-red-riding-hood,98,58,59.18
 Unmatched,Achilles,achilles,Loki,loki,31,24,77.42
-Unmatched,Achilles,achilles,Luke Cage,luke-cage,187,108,57.75
+Unmatched,Achilles,achilles,Luke Cage,luke-cage,190,110,57.89
 Unmatched,Achilles,achilles,Medusa,medusa,101,18,17.82
 Unmatched,Achilles,achilles,Michelangelo,michelangelo,2,2,100
-Unmatched,Achilles,achilles,Moon Knight,moon-knight,118,70,59.32
+Unmatched,Achilles,achilles,Moon Knight,moon-knight,119,71,59.66
 Unmatched,Achilles,achilles,Ms. Marvel,ms-marvel,5,5,100
-Unmatched,Achilles,achilles,Nikola Tesla,nikola-tesla,101,59,58.42
+Unmatched,Achilles,achilles,Nikola Tesla,nikola-tesla,102,60,58.82
 Unmatched,Achilles,achilles,Pandora,pandora,38,24,63.16
 Unmatched,Achilles,achilles,Philippa,philippa,8,6,75
 Unmatched,Achilles,achilles,Robin Hood,robin-hood,109,65,59.63
 Unmatched,Achilles,achilles,Rosie the Riveter,rosie-the-riveter,5,5,100
 Unmatched,Achilles,achilles,Shakespeare,shakespeare,39,30,76.92
-Unmatched,Achilles,achilles,She-Hulk,she-hulk,108,60,55.56
+Unmatched,Achilles,achilles,She-Hulk,she-hulk,109,61,55.96
 Unmatched,Achilles,achilles,Sherlock Holmes,sherlock-holmes,26,7,26.92
 Unmatched,Achilles,achilles,Spider-Man,spider-man,30,17,56.67
 Unmatched,Achilles,achilles,Squirrel Girl,squirrel-girl,4,3,75
-Unmatched,Achilles,achilles,Sun Wukong,sun-wukong,154,33,21.43
+Unmatched,Achilles,achilles,Sun Wukong,sun-wukong,155,33,21.29
 Unmatched,Achilles,achilles,T. Rex,t-rex,126,74,58.73
 Unmatched,Achilles,achilles,The Genie,the-genie,64,53,82.81
-Unmatched,Achilles,achilles,Titania,titania,34,21,61.76
+Unmatched,Achilles,achilles,Titania,titania,35,21,60
 Unmatched,Achilles,achilles,Tomoe Gozen,tomoe-gozen,107,73,68.22
 Unmatched,Achilles,achilles,Willow,willow,1,0,0
 Unmatched,Achilles,achilles,Winter Soldier,winter-soldier,29,22,75.86
 Unmatched,Achilles,achilles,Wyatt Earp,wyatt-earp,17,12,70.59
-Unmatched,Achilles,achilles,Yennefer & Triss,yennefer-triss,111,55,49.55
+Unmatched,Achilles,achilles,Yennefer & Triss,yennefer-triss,113,56,49.56
 Unmatched,Achilles,achilles,Yennenga,yennenga,321,134,41.74
 Unmatched,Alice,alice,Bloody Mary,bloody-mary,22,16,72.73
 Unmatched,Alice,alice,Cloak & Dagger,cloak-dagger,32,21,65.63
@@ -122,10 +123,11 @@ Unmatched,Annie Christmas,annie-christmas,Rosie the Riveter,rosie-the-riveter,5,
 Unmatched,Annie Christmas,annie-christmas,Sherlock Holmes,sherlock-holmes,18,5,27.78
 Unmatched,Annie Christmas,annie-christmas,Sun Wukong,sun-wukong,12,1,8.33
 Unmatched,Annie Christmas,annie-christmas,Wyatt Earp,wyatt-earp,20,10,50
-Unmatched,Baba Yaga,baba-yaga,Abe Sapien,abe-sapien,17,7,41.18
+Unmatched,Baba Yaga,baba-yaga,Abe Sapien,abe-sapien,19,7,36.84
 Unmatched,Baba Yaga,baba-yaga,Ancient Leshen,ancient-leshen,1,0,0
-Unmatched,Baba Yaga,baba-yaga,Hellboy,hellboy,11,2,18.18
-Unmatched,Baba Yaga,baba-yaga,Liz Sherman,liz-sherman,7,4,57.14
+Unmatched,Baba Yaga,baba-yaga,Bruce Lee,bruce-lee,1,1,100
+Unmatched,Baba Yaga,baba-yaga,Hellboy,hellboy,13,2,15.38
+Unmatched,Baba Yaga,baba-yaga,Liz Sherman,liz-sherman,9,6,66.67
 Unmatched,Baba Yaga,baba-yaga,Nikola Tesla,nikola-tesla,1,0,0
 Unmatched,Baba Yaga,baba-yaga,Raptors,raptors,1,1,100
 Unmatched,Beowulf,beowulf,Alice,alice,103,50,48.54
@@ -133,7 +135,7 @@ Unmatched,Beowulf,beowulf,Ancient Leshen,ancient-leshen,2,1,50
 Unmatched,Beowulf,beowulf,Annie Christmas,annie-christmas,43,18,41.86
 Unmatched,Beowulf,beowulf,Bloody Mary,bloody-mary,40,19,47.5
 Unmatched,Beowulf,beowulf,Buffy,buffy,9,7,77.78
-Unmatched,Beowulf,beowulf,Chupacabra,chupacabra,6,5,83.33
+Unmatched,Beowulf,beowulf,Chupacabra,chupacabra,7,6,85.71
 Unmatched,Beowulf,beowulf,Cloak & Dagger,cloak-dagger,14,9,64.29
 Unmatched,Beowulf,beowulf,Dr. Sattler,dr-sattler,24,12,50
 Unmatched,Beowulf,beowulf,Ghost Rider,ghost-rider,34,26,76.47
@@ -285,7 +287,7 @@ Unmatched,Black Widow,black-widow,Winter Soldier,winter-soldier,129,69,53.49
 Unmatched,Black Widow,black-widow,Wyatt Earp,wyatt-earp,43,17,39.53
 Unmatched,Black Widow,black-widow,Yennefer & Triss,yennefer-triss,8,2,25
 Unmatched,Black Widow,black-widow,Yennenga,yennenga,92,44,47.83
-Unmatched,Blackbeard,blackbeard,Achilles,achilles,46,29,63.04
+Unmatched,Blackbeard,blackbeard,Achilles,achilles,47,29,61.7
 Unmatched,Blackbeard,blackbeard,Alice,alice,15,8,53.33
 Unmatched,Blackbeard,blackbeard,Ancient Leshen,ancient-leshen,14,7,50
 Unmatched,Blackbeard,blackbeard,Annie Christmas,annie-christmas,9,7,77.78
@@ -295,11 +297,11 @@ Unmatched,Blackbeard,blackbeard,Black Widow,black-widow,45,26,57.78
 Unmatched,Blackbeard,blackbeard,Bloody Mary,bloody-mary,8,8,100
 Unmatched,Blackbeard,blackbeard,Bruce Lee,bruce-lee,23,13,56.52
 Unmatched,Blackbeard,blackbeard,Buffy,buffy,4,3,75
-Unmatched,Blackbeard,blackbeard,Bullseye,bullseye,39,13,33.33
+Unmatched,Blackbeard,blackbeard,Bullseye,bullseye,40,13,32.5
 Unmatched,Blackbeard,blackbeard,Chupacabra,chupacabra,67,38,56.72
 Unmatched,Blackbeard,blackbeard,Cloak & Dagger,cloak-dagger,4,2,50
 Unmatched,Blackbeard,blackbeard,Daredevil,daredevil,58,36,62.07
-Unmatched,Blackbeard,blackbeard,Doctor Strange,doctor-strange,73,39,53.42
+Unmatched,Blackbeard,blackbeard,Doctor Strange,doctor-strange,74,39,52.7
 Unmatched,Blackbeard,blackbeard,Donatello,donatello,27,18,66.67
 Unmatched,Blackbeard,blackbeard,Dr. Jill Trent,dr-jill-trent,35,20,57.14
 Unmatched,Blackbeard,blackbeard,Dr. Sattler,dr-sattler,1,1,100
@@ -319,7 +321,7 @@ Unmatched,Blackbeard,blackbeard,John Henry,john-henry,37,20,54.05
 Unmatched,Blackbeard,blackbeard,King Arthur,king-arthur,13,11,84.62
 Unmatched,Blackbeard,blackbeard,Krang,krang,25,17,68
 Unmatched,Blackbeard,blackbeard,Leonardo,leonardo,19,14,73.68
-Unmatched,Blackbeard,blackbeard,Little Red Riding Hood,little-red-riding-hood,65,47,72.31
+Unmatched,Blackbeard,blackbeard,Little Red Riding Hood,little-red-riding-hood,66,48,72.73
 Unmatched,Blackbeard,blackbeard,Loki,loki,84,48,57.14
 Unmatched,Blackbeard,blackbeard,Luke Cage,luke-cage,38,12,31.58
 Unmatched,Blackbeard,blackbeard,Medusa,medusa,63,41,65.08
@@ -343,8 +345,8 @@ Unmatched,Blackbeard,blackbeard,The Genie,the-genie,61,28,45.9
 Unmatched,Blackbeard,blackbeard,Titania,titania,10,7,70
 Unmatched,Blackbeard,blackbeard,Tomoe Gozen,tomoe-gozen,61,30,49.18
 Unmatched,Blackbeard,blackbeard,Winter Soldier,winter-soldier,30,19,63.33
-Unmatched,Blackbeard,blackbeard,Wyatt Earp,wyatt-earp,67,38,56.72
-Unmatched,Blackbeard,blackbeard,Yennefer & Triss,yennefer-triss,69,29,42.03
+Unmatched,Blackbeard,blackbeard,Wyatt Earp,wyatt-earp,68,38,55.88
+Unmatched,Blackbeard,blackbeard,Yennefer & Triss,yennefer-triss,71,30,42.25
 Unmatched,Blackbeard,blackbeard,Yennenga,yennenga,62,38,61.29
 Unmatched,Bloody Mary,bloody-mary,King Arthur,king-arthur,38,26,68.42
 Unmatched,Bruce Lee,bruce-lee,Alice,alice,115,50,43.48
@@ -363,7 +365,7 @@ Unmatched,Bruce Lee,bruce-lee,Deadpool,deadpool,4,4,100
 Unmatched,Bruce Lee,bruce-lee,Dr. Sattler,dr-sattler,61,20,32.79
 Unmatched,Bruce Lee,bruce-lee,Dracula,dracula,84,30,35.71
 Unmatched,Bruce Lee,bruce-lee,Elektra,elektra,9,2,22.22
-Unmatched,Bruce Lee,bruce-lee,Eredin,eredin,86,50,58.14
+Unmatched,Bruce Lee,bruce-lee,Eredin,eredin,87,50,57.47
 Unmatched,Bruce Lee,bruce-lee,George Washington,george-washington,20,13,65
 Unmatched,Bruce Lee,bruce-lee,Ghost Rider,ghost-rider,19,11,57.89
 Unmatched,Bruce Lee,bruce-lee,Golden Bat,golden-bat,48,19,39.58
@@ -377,7 +379,7 @@ Unmatched,Bruce Lee,bruce-lee,Leonardo,leonardo,63,27,42.86
 Unmatched,Bruce Lee,bruce-lee,Loki,loki,73,38,52.05
 Unmatched,Bruce Lee,bruce-lee,Medusa,medusa,37,12,32.43
 Unmatched,Bruce Lee,bruce-lee,Michelangelo,michelangelo,17,13,76.47
-Unmatched,Bruce Lee,bruce-lee,Moon Knight,moon-knight,40,13,32.5
+Unmatched,Bruce Lee,bruce-lee,Moon Knight,moon-knight,43,13,30.23
 Unmatched,Bruce Lee,bruce-lee,Ms. Marvel,ms-marvel,44,21,47.73
 Unmatched,Bruce Lee,bruce-lee,Pandora,pandora,58,28,48.28
 Unmatched,Bruce Lee,bruce-lee,Robin Hood,robin-hood,124,60,48.39
@@ -385,7 +387,7 @@ Unmatched,Bruce Lee,bruce-lee,Rosie the Riveter,rosie-the-riveter,16,12,75
 Unmatched,Bruce Lee,bruce-lee,She-Hulk,she-hulk,7,1,14.29
 Unmatched,Bruce Lee,bruce-lee,Sherlock Holmes,sherlock-holmes,15,3,20
 Unmatched,Bruce Lee,bruce-lee,Spider-Man,spider-man,29,14,48.28
-Unmatched,Bruce Lee,bruce-lee,Sun Wukong,sun-wukong,104,62,59.62
+Unmatched,Bruce Lee,bruce-lee,Sun Wukong,sun-wukong,105,63,60
 Unmatched,Bruce Lee,bruce-lee,The Genie,the-genie,91,50,54.95
 Unmatched,Bruce Lee,bruce-lee,Titania,titania,9,3,33.33
 Unmatched,Bruce Lee,bruce-lee,Tomoe Gozen,tomoe-gozen,80,41,51.25
@@ -415,14 +417,14 @@ Unmatched,Bullseye,bullseye,Chupacabra,chupacabra,16,3,18.75
 Unmatched,Bullseye,bullseye,Cloak & Dagger,cloak-dagger,31,12,38.71
 Unmatched,Bullseye,bullseye,Dr. Sattler,dr-sattler,35,9,25.71
 Unmatched,Bullseye,bullseye,Dracula,dracula,55,23,41.82
-Unmatched,Bullseye,bullseye,Eredin,eredin,34,22,64.71
+Unmatched,Bullseye,bullseye,Eredin,eredin,35,23,65.71
 Unmatched,Bullseye,bullseye,George Washington,george-washington,6,3,50
 Unmatched,Bullseye,bullseye,Ghost Rider,ghost-rider,38,21,55.26
 Unmatched,Bullseye,bullseye,InGen,ingen,29,24,82.76
 Unmatched,Bullseye,bullseye,Invisible Man,invisible-man,17,15,88.24
 Unmatched,Bullseye,bullseye,King Arthur,king-arthur,32,17,53.13
 Unmatched,Bullseye,bullseye,Krang,krang,2,1,50
-Unmatched,Bullseye,bullseye,Leonardo,leonardo,3,2,66.67
+Unmatched,Bullseye,bullseye,Leonardo,leonardo,6,3,50
 Unmatched,Bullseye,bullseye,Loki,loki,10,1,10
 Unmatched,Bullseye,bullseye,Medusa,medusa,23,10,43.48
 Unmatched,Bullseye,bullseye,Michelangelo,michelangelo,4,3,75
@@ -489,7 +491,7 @@ Unmatched,Ciri,ciri,Luke Cage,luke-cage,30,17,56.67
 Unmatched,Ciri,ciri,Medusa,medusa,47,17,36.17
 Unmatched,Ciri,ciri,Michelangelo,michelangelo,8,7,87.5
 Unmatched,Ciri,ciri,Moon Knight,moon-knight,21,13,61.9
-Unmatched,Ciri,ciri,Muhammad Ali,muhammad-ali,7,2,28.57
+Unmatched,Ciri,ciri,Muhammad Ali,muhammad-ali,9,2,22.22
 Unmatched,Ciri,ciri,Nikola Tesla,nikola-tesla,76,44,57.89
 Unmatched,Ciri,ciri,Pandora,pandora,10,6,60
 Unmatched,Ciri,ciri,Philippa,philippa,69,52,75.36
@@ -527,7 +529,7 @@ Unmatched,Daredevil,daredevil,Cloak & Dagger,cloak-dagger,3,0,0
 Unmatched,Daredevil,daredevil,Deadpool,deadpool,6,2,33.33
 Unmatched,Daredevil,daredevil,Dr. Sattler,dr-sattler,32,21,65.63
 Unmatched,Daredevil,daredevil,Dracula,dracula,94,33,35.11
-Unmatched,Daredevil,daredevil,Elektra,elektra,75,39,52
+Unmatched,Daredevil,daredevil,Elektra,elektra,76,40,52.63
 Unmatched,Daredevil,daredevil,Eredin,eredin,151,72,47.68
 Unmatched,Daredevil,daredevil,George Washington,george-washington,15,12,80
 Unmatched,Daredevil,daredevil,Ghost Rider,ghost-rider,32,19,59.38
@@ -579,7 +581,7 @@ Unmatched,Deadpool,deadpool,The Genie,the-genie,7,5,71.43
 Unmatched,Deadpool,deadpool,Willow,willow,8,4,50
 Unmatched,Deadpool,deadpool,Yennefer & Triss,yennefer-triss,1,0,0
 Unmatched,Deadpool,deadpool,Yennenga,yennenga,5,5,100
-Unmatched,Doctor Strange,doctor-strange,Achilles,achilles,31,17,54.84
+Unmatched,Doctor Strange,doctor-strange,Achilles,achilles,35,17,48.57
 Unmatched,Doctor Strange,doctor-strange,Alice,alice,2,2,100
 Unmatched,Doctor Strange,doctor-strange,Ancient Leshen,ancient-leshen,4,2,50
 Unmatched,Doctor Strange,doctor-strange,Annie Christmas,annie-christmas,5,3,60
@@ -589,9 +591,9 @@ Unmatched,Doctor Strange,doctor-strange,Black Widow,black-widow,48,26,54.17
 Unmatched,Doctor Strange,doctor-strange,Bloody Mary,bloody-mary,1,1,100
 Unmatched,Doctor Strange,doctor-strange,Bruce Lee,bruce-lee,24,6,25
 Unmatched,Doctor Strange,doctor-strange,Buffy,buffy,1,1,100
-Unmatched,Doctor Strange,doctor-strange,Bullseye,bullseye,74,30,40.54
+Unmatched,Doctor Strange,doctor-strange,Bullseye,bullseye,75,31,41.33
 Unmatched,Doctor Strange,doctor-strange,Chupacabra,chupacabra,8,7,87.5
-Unmatched,Doctor Strange,doctor-strange,Daredevil,daredevil,54,29,53.7
+Unmatched,Doctor Strange,doctor-strange,Daredevil,daredevil,56,30,53.57
 Unmatched,Doctor Strange,doctor-strange,Deadpool,deadpool,3,3,100
 Unmatched,Doctor Strange,doctor-strange,Donatello,donatello,10,7,70
 Unmatched,Doctor Strange,doctor-strange,Dr. Jill Trent,dr-jill-trent,14,9,64.29
@@ -601,7 +603,7 @@ Unmatched,Doctor Strange,doctor-strange,Elektra,elektra,23,17,73.91
 Unmatched,Doctor Strange,doctor-strange,Eredin,eredin,4,3,75
 Unmatched,Doctor Strange,doctor-strange,George Washington,george-washington,6,4,66.67
 Unmatched,Doctor Strange,doctor-strange,Ghost Rider,ghost-rider,18,6,33.33
-Unmatched,Doctor Strange,doctor-strange,Golden Bat,golden-bat,181,91,50.55
+Unmatched,Doctor Strange,doctor-strange,Golden Bat,golden-bat,183,93,51.09
 Unmatched,Doctor Strange,doctor-strange,Hamlet,hamlet,1,1,100
 Unmatched,Doctor Strange,doctor-strange,Houdini,houdini,100,53,53
 Unmatched,Doctor Strange,doctor-strange,InGen,ingen,1,1,100
@@ -613,10 +615,10 @@ Unmatched,Doctor Strange,doctor-strange,Loki,loki,38,16,42.11
 Unmatched,Doctor Strange,doctor-strange,Luke Cage,luke-cage,58,34,58.62
 Unmatched,Doctor Strange,doctor-strange,Medusa,medusa,95,52,54.74
 Unmatched,Doctor Strange,doctor-strange,Michelangelo,michelangelo,1,0,0
-Unmatched,Doctor Strange,doctor-strange,Moon Knight,moon-knight,26,11,42.31
+Unmatched,Doctor Strange,doctor-strange,Moon Knight,moon-knight,28,13,46.43
 Unmatched,Doctor Strange,doctor-strange,Ms. Marvel,ms-marvel,6,2,33.33
 Unmatched,Doctor Strange,doctor-strange,Muhammad Ali,muhammad-ali,2,0,0
-Unmatched,Doctor Strange,doctor-strange,Nikola Tesla,nikola-tesla,151,56,37.09
+Unmatched,Doctor Strange,doctor-strange,Nikola Tesla,nikola-tesla,155,58,37.42
 Unmatched,Doctor Strange,doctor-strange,Pandora,pandora,7,5,71.43
 Unmatched,Doctor Strange,doctor-strange,Philippa,philippa,5,4,80
 Unmatched,Doctor Strange,doctor-strange,Robin Hood,robin-hood,10,8,80
@@ -624,15 +626,15 @@ Unmatched,Doctor Strange,doctor-strange,Rosie the Riveter,rosie-the-riveter,26,9
 Unmatched,Doctor Strange,doctor-strange,Shakespeare,shakespeare,1,1,100
 Unmatched,Doctor Strange,doctor-strange,She-Hulk,she-hulk,123,70,56.91
 Unmatched,Doctor Strange,doctor-strange,Sherlock Holmes,sherlock-holmes,44,22,50
-Unmatched,Doctor Strange,doctor-strange,Shredder,shredder,12,3,25
+Unmatched,Doctor Strange,doctor-strange,Shredder,shredder,13,4,30.77
 Unmatched,Doctor Strange,doctor-strange,Spider-Man,spider-man,20,17,85
 Unmatched,Doctor Strange,doctor-strange,Sun Wukong,sun-wukong,53,43,81.13
 Unmatched,Doctor Strange,doctor-strange,T. Rex,t-rex,81,19,23.46
 Unmatched,Doctor Strange,doctor-strange,The Genie,the-genie,11,8,72.73
 Unmatched,Doctor Strange,doctor-strange,Titania,titania,11,5,45.45
-Unmatched,Doctor Strange,doctor-strange,Tomoe Gozen,tomoe-gozen,54,30,55.56
+Unmatched,Doctor Strange,doctor-strange,Tomoe Gozen,tomoe-gozen,55,31,56.36
 Unmatched,Doctor Strange,doctor-strange,Winter Soldier,winter-soldier,90,54,60
-Unmatched,Doctor Strange,doctor-strange,Wyatt Earp,wyatt-earp,53,25,47.17
+Unmatched,Doctor Strange,doctor-strange,Wyatt Earp,wyatt-earp,57,27,47.37
 Unmatched,Doctor Strange,doctor-strange,Yennefer & Triss,yennefer-triss,81,54,66.67
 Unmatched,Doctor Strange,doctor-strange,Yennenga,yennenga,84,37,44.05
 Unmatched,Donatello,donatello,Alice,alice,34,18,52.94
@@ -647,11 +649,11 @@ Unmatched,Donatello,donatello,Chupacabra,chupacabra,28,19,67.86
 Unmatched,Donatello,donatello,Daredevil,daredevil,30,22,73.33
 Unmatched,Donatello,donatello,Dr. Sattler,dr-sattler,2,1,50
 Unmatched,Donatello,donatello,Dracula,dracula,28,10,35.71
-Unmatched,Donatello,donatello,Eredin,eredin,15,5,33.33
+Unmatched,Donatello,donatello,Eredin,eredin,17,5,29.41
 Unmatched,Donatello,donatello,George Washington,george-washington,14,7,50
 Unmatched,Donatello,donatello,Ghost Rider,ghost-rider,1,1,100
 Unmatched,Donatello,donatello,Golden Bat,golden-bat,9,4,44.44
-Unmatched,Donatello,donatello,Houdini,houdini,14,5,35.71
+Unmatched,Donatello,donatello,Houdini,houdini,15,6,40
 Unmatched,Donatello,donatello,InGen,ingen,31,13,41.94
 Unmatched,Donatello,donatello,Jekyll & Hyde,jekyll-hyde,3,2,66.67
 Unmatched,Donatello,donatello,Krang,krang,44,13,29.55
@@ -669,10 +671,10 @@ Unmatched,Donatello,donatello,Sherlock Holmes,sherlock-holmes,4,1,25
 Unmatched,Donatello,donatello,Sun Wukong,sun-wukong,5,2,40
 Unmatched,Donatello,donatello,The Genie,the-genie,23,15,65.22
 Unmatched,Donatello,donatello,Titania,titania,16,8,50
-Unmatched,Donatello,donatello,Tomoe Gozen,tomoe-gozen,39,23,58.97
+Unmatched,Donatello,donatello,Tomoe Gozen,tomoe-gozen,40,24,60
 Unmatched,Donatello,donatello,Willow,willow,1,1,100
-Unmatched,Donatello,donatello,Wyatt Earp,wyatt-earp,25,23,92
-Unmatched,Donatello,donatello,Yennefer & Triss,yennefer-triss,17,2,11.76
+Unmatched,Donatello,donatello,Wyatt Earp,wyatt-earp,26,23,88.46
+Unmatched,Donatello,donatello,Yennefer & Triss,yennefer-triss,18,3,16.67
 Unmatched,Donatello,donatello,Yennenga,yennenga,19,3,15.79
 Unmatched,Dr. Jill Trent,dr-jill-trent,Alice,alice,37,24,64.86
 Unmatched,Dr. Jill Trent,dr-jill-trent,Ancient Leshen,ancient-leshen,57,29,50.88
@@ -689,11 +691,11 @@ Unmatched,Dr. Jill Trent,dr-jill-trent,Cloak & Dagger,cloak-dagger,5,4,80
 Unmatched,Dr. Jill Trent,dr-jill-trent,Daredevil,daredevil,74,18,24.32
 Unmatched,Dr. Jill Trent,dr-jill-trent,Donatello,donatello,10,9,90
 Unmatched,Dr. Jill Trent,dr-jill-trent,Dr. Sattler,dr-sattler,14,13,92.86
-Unmatched,Dr. Jill Trent,dr-jill-trent,Dracula,dracula,46,31,67.39
+Unmatched,Dr. Jill Trent,dr-jill-trent,Dracula,dracula,47,32,68.09
 Unmatched,Dr. Jill Trent,dr-jill-trent,Elektra,elektra,5,2,40
 Unmatched,Dr. Jill Trent,dr-jill-trent,Eredin,eredin,100,55,55
 Unmatched,Dr. Jill Trent,dr-jill-trent,George Washington,george-washington,19,14,73.68
-Unmatched,Dr. Jill Trent,dr-jill-trent,Geralt of Rivia,geralt-of-rivia,17,12,70.59
+Unmatched,Dr. Jill Trent,dr-jill-trent,Geralt of Rivia,geralt-of-rivia,18,13,72.22
 Unmatched,Dr. Jill Trent,dr-jill-trent,Ghost Rider,ghost-rider,18,7,38.89
 Unmatched,Dr. Jill Trent,dr-jill-trent,Golden Bat,golden-bat,128,45,35.16
 Unmatched,Dr. Jill Trent,dr-jill-trent,Hamlet,hamlet,10,7,70
@@ -766,7 +768,7 @@ Unmatched,Elektra,elektra,Bullseye,bullseye,53,36,67.92
 Unmatched,Elektra,elektra,Dr. Sattler,dr-sattler,1,1,100
 Unmatched,Elektra,elektra,Dracula,dracula,22,14,63.64
 Unmatched,Elektra,elektra,Eredin,eredin,1,1,100
-Unmatched,Elektra,elektra,Ghost Rider,ghost-rider,19,10,52.63
+Unmatched,Elektra,elektra,Ghost Rider,ghost-rider,20,10,50
 Unmatched,Elektra,elektra,InGen,ingen,11,9,81.82
 Unmatched,Elektra,elektra,Invisible Man,invisible-man,5,5,100
 Unmatched,Elektra,elektra,King Arthur,king-arthur,1,0,0
@@ -779,7 +781,7 @@ Unmatched,Elektra,elektra,Sherlock Holmes,sherlock-holmes,23,7,30.43
 Unmatched,Elektra,elektra,Sun Wukong,sun-wukong,20,17,85
 Unmatched,Elektra,elektra,The Genie,the-genie,5,3,60
 Unmatched,Elektra,elektra,Tomoe Gozen,tomoe-gozen,3,3,100
-Unmatched,Elektra,elektra,Wyatt Earp,wyatt-earp,7,4,57.14
+Unmatched,Elektra,elektra,Wyatt Earp,wyatt-earp,8,4,50
 Unmatched,Elektra,elektra,Yennefer & Triss,yennefer-triss,17,11,64.71
 Unmatched,Elektra,elektra,Yennenga,yennenga,38,32,84.21
 Unmatched,Eredin,eredin,Alice,alice,15,12,80
@@ -809,7 +811,7 @@ Unmatched,Geralt of Rivia,geralt-of-rivia,Beowulf,beowulf,30,18,60
 Unmatched,Geralt of Rivia,geralt-of-rivia,Bigfoot,bigfoot,51,21,41.18
 Unmatched,Geralt of Rivia,geralt-of-rivia,Black Panther,black-panther,15,9,60
 Unmatched,Geralt of Rivia,geralt-of-rivia,Bloody Mary,bloody-mary,18,9,50
-Unmatched,Geralt of Rivia,geralt-of-rivia,Bruce Lee,bruce-lee,13,6,46.15
+Unmatched,Geralt of Rivia,geralt-of-rivia,Bruce Lee,bruce-lee,14,6,42.86
 Unmatched,Geralt of Rivia,geralt-of-rivia,Buffy,buffy,1,0,0
 Unmatched,Geralt of Rivia,geralt-of-rivia,Bullseye,bullseye,4,3,75
 Unmatched,Geralt of Rivia,geralt-of-rivia,Chupacabra,chupacabra,15,5,33.33
@@ -818,23 +820,23 @@ Unmatched,Geralt of Rivia,geralt-of-rivia,Daredevil,daredevil,60,35,58.33
 Unmatched,Geralt of Rivia,geralt-of-rivia,Donatello,donatello,65,29,44.62
 Unmatched,Geralt of Rivia,geralt-of-rivia,Dr. Sattler,dr-sattler,2,0,0
 Unmatched,Geralt of Rivia,geralt-of-rivia,Dracula,dracula,75,48,64
-Unmatched,Geralt of Rivia,geralt-of-rivia,Eredin,eredin,61,34,55.74
+Unmatched,Geralt of Rivia,geralt-of-rivia,Eredin,eredin,63,35,55.56
 Unmatched,Geralt of Rivia,geralt-of-rivia,George Washington,george-washington,11,7,63.64
 Unmatched,Geralt of Rivia,geralt-of-rivia,Ghost Rider,ghost-rider,8,5,62.5
 Unmatched,Geralt of Rivia,geralt-of-rivia,Golden Bat,golden-bat,10,3,30
 Unmatched,Geralt of Rivia,geralt-of-rivia,Hamlet,hamlet,3,2,66.67
-Unmatched,Geralt of Rivia,geralt-of-rivia,Houdini,houdini,32,20,62.5
+Unmatched,Geralt of Rivia,geralt-of-rivia,Houdini,houdini,33,20,60.61
 Unmatched,Geralt of Rivia,geralt-of-rivia,InGen,ingen,48,19,39.58
 Unmatched,Geralt of Rivia,geralt-of-rivia,Invisible Man,invisible-man,16,11,68.75
 Unmatched,Geralt of Rivia,geralt-of-rivia,King Arthur,king-arthur,13,8,61.54
 Unmatched,Geralt of Rivia,geralt-of-rivia,Krang,krang,15,4,26.67
-Unmatched,Geralt of Rivia,geralt-of-rivia,Leonardo,leonardo,28,14,50
+Unmatched,Geralt of Rivia,geralt-of-rivia,Leonardo,leonardo,29,14,48.28
 Unmatched,Geralt of Rivia,geralt-of-rivia,Loki,loki,18,10,55.56
 Unmatched,Geralt of Rivia,geralt-of-rivia,Medusa,medusa,16,4,25
 Unmatched,Geralt of Rivia,geralt-of-rivia,Michelangelo,michelangelo,15,12,80
 Unmatched,Geralt of Rivia,geralt-of-rivia,Moon Knight,moon-knight,82,36,43.9
 Unmatched,Geralt of Rivia,geralt-of-rivia,Ms. Marvel,ms-marvel,3,2,66.67
-Unmatched,Geralt of Rivia,geralt-of-rivia,Nikola Tesla,nikola-tesla,20,9,45
+Unmatched,Geralt of Rivia,geralt-of-rivia,Nikola Tesla,nikola-tesla,21,10,47.62
 Unmatched,Geralt of Rivia,geralt-of-rivia,Pandora,pandora,15,14,93.33
 Unmatched,Geralt of Rivia,geralt-of-rivia,Robin Hood,robin-hood,11,8,72.73
 Unmatched,Geralt of Rivia,geralt-of-rivia,Rosie the Riveter,rosie-the-riveter,4,3,75
@@ -846,8 +848,8 @@ Unmatched,Geralt of Rivia,geralt-of-rivia,T. Rex,t-rex,50,31,62
 Unmatched,Geralt of Rivia,geralt-of-rivia,The Genie,the-genie,34,19,55.88
 Unmatched,Geralt of Rivia,geralt-of-rivia,Titania,titania,42,22,52.38
 Unmatched,Geralt of Rivia,geralt-of-rivia,Tomoe Gozen,tomoe-gozen,64,36,56.25
-Unmatched,Geralt of Rivia,geralt-of-rivia,Wyatt Earp,wyatt-earp,26,16,61.54
-Unmatched,Geralt of Rivia,geralt-of-rivia,Yennefer & Triss,yennefer-triss,76,37,48.68
+Unmatched,Geralt of Rivia,geralt-of-rivia,Wyatt Earp,wyatt-earp,27,17,62.96
+Unmatched,Geralt of Rivia,geralt-of-rivia,Yennefer & Triss,yennefer-triss,77,38,49.35
 Unmatched,Geralt of Rivia,geralt-of-rivia,Yennenga,yennenga,33,12,36.36
 Unmatched,Ghost Rider,ghost-rider,Bloody Mary,bloody-mary,26,11,42.31
 Unmatched,Ghost Rider,ghost-rider,Cloak & Dagger,cloak-dagger,20,13,65
@@ -860,7 +862,7 @@ Unmatched,Golden Bat,golden-bat,Annie Christmas,annie-christmas,60,32,53.33
 Unmatched,Golden Bat,golden-bat,Black Panther,black-panther,22,19,86.36
 Unmatched,Golden Bat,golden-bat,Bloody Mary,bloody-mary,47,31,65.96
 Unmatched,Golden Bat,golden-bat,Buffy,buffy,1,1,100
-Unmatched,Golden Bat,golden-bat,Bullseye,bullseye,52,20,38.46
+Unmatched,Golden Bat,golden-bat,Bullseye,bullseye,53,21,39.62
 Unmatched,Golden Bat,golden-bat,Chupacabra,chupacabra,18,10,55.56
 Unmatched,Golden Bat,golden-bat,Dr. Sattler,dr-sattler,9,8,88.89
 Unmatched,Golden Bat,golden-bat,Dracula,dracula,32,23,71.88
@@ -924,7 +926,7 @@ Unmatched,Houdini,houdini,Annie Christmas,annie-christmas,40,29,72.5
 Unmatched,Houdini,houdini,Beowulf,beowulf,28,16,57.14
 Unmatched,Houdini,houdini,Black Panther,black-panther,148,52,35.14
 Unmatched,Houdini,houdini,Bloody Mary,bloody-mary,16,15,93.75
-Unmatched,Houdini,houdini,Bullseye,bullseye,36,27,75
+Unmatched,Houdini,houdini,Bullseye,bullseye,37,28,75.68
 Unmatched,Houdini,houdini,Chupacabra,chupacabra,6,2,33.33
 Unmatched,Houdini,houdini,Daredevil,daredevil,95,60,63.16
 Unmatched,Houdini,houdini,Dr. Sattler,dr-sattler,54,16,29.63
@@ -942,7 +944,7 @@ Unmatched,Houdini,houdini,Krang,krang,3,2,66.67
 Unmatched,Houdini,houdini,Loki,loki,13,8,61.54
 Unmatched,Houdini,houdini,Medusa,medusa,156,37,23.72
 Unmatched,Houdini,houdini,Michelangelo,michelangelo,2,1,50
-Unmatched,Houdini,houdini,Moon Knight,moon-knight,77,44,57.14
+Unmatched,Houdini,houdini,Moon Knight,moon-knight,78,44,56.41
 Unmatched,Houdini,houdini,Ms. Marvel,ms-marvel,4,4,100
 Unmatched,Houdini,houdini,Pandora,pandora,28,16,57.14
 Unmatched,Houdini,houdini,Robin Hood,robin-hood,46,18,39.13
@@ -950,10 +952,10 @@ Unmatched,Houdini,houdini,Rosie the Riveter,rosie-the-riveter,2,2,100
 Unmatched,Houdini,houdini,She-Hulk,she-hulk,92,28,30.43
 Unmatched,Houdini,houdini,Sherlock Holmes,sherlock-holmes,71,44,61.97
 Unmatched,Houdini,houdini,Sun Wukong,sun-wukong,144,76,52.78
-Unmatched,Houdini,houdini,The Genie,the-genie,135,67,49.63
+Unmatched,Houdini,houdini,The Genie,the-genie,136,68,50
 Unmatched,Houdini,houdini,Titania,titania,14,9,64.29
 Unmatched,Houdini,houdini,Tomoe Gozen,tomoe-gozen,50,33,66
-Unmatched,Houdini,houdini,Wyatt Earp,wyatt-earp,18,8,44.44
+Unmatched,Houdini,houdini,Wyatt Earp,wyatt-earp,19,9,47.37
 Unmatched,Houdini,houdini,Yennefer & Triss,yennefer-triss,78,60,76.92
 Unmatched,Houdini,houdini,Yennenga,yennenga,250,117,46.8
 Unmatched,InGen,ingen,Alice,alice,42,31,73.81
@@ -962,9 +964,9 @@ Unmatched,InGen,ingen,Annie Christmas,annie-christmas,30,21,70
 Unmatched,InGen,ingen,Beowulf,beowulf,39,29,74.36
 Unmatched,InGen,ingen,Bloody Mary,bloody-mary,18,13,72.22
 Unmatched,InGen,ingen,Buffy,buffy,6,3,50
-Unmatched,InGen,ingen,Chupacabra,chupacabra,18,14,77.78
+Unmatched,InGen,ingen,Chupacabra,chupacabra,19,15,78.95
 Unmatched,InGen,ingen,Dr. Sattler,dr-sattler,17,11,64.71
-Unmatched,InGen,ingen,Eredin,eredin,13,8,61.54
+Unmatched,InGen,ingen,Eredin,eredin,14,9,64.29
 Unmatched,InGen,ingen,George Washington,george-washington,9,5,55.56
 Unmatched,InGen,ingen,Ghost Rider,ghost-rider,33,24,72.73
 Unmatched,InGen,ingen,Invisible Man,invisible-man,10,8,80
@@ -1011,12 +1013,13 @@ Unmatched,Jekyll & Hyde,jekyll-hyde,Golden Bat,golden-bat,14,2,14.29
 Unmatched,Jekyll & Hyde,jekyll-hyde,Hamlet,hamlet,5,3,60
 Unmatched,Jekyll & Hyde,jekyll-hyde,Houdini,houdini,7,2,28.57
 Unmatched,Jekyll & Hyde,jekyll-hyde,InGen,ingen,19,5,26.32
-Unmatched,Jekyll & Hyde,jekyll-hyde,Invisible Man,invisible-man,69,33,47.83
+Unmatched,Jekyll & Hyde,jekyll-hyde,Invisible Man,invisible-man,70,33,47.14
 Unmatched,Jekyll & Hyde,jekyll-hyde,King Arthur,king-arthur,54,22,40.74
 Unmatched,Jekyll & Hyde,jekyll-hyde,Leonardo,leonardo,3,1,33.33
 Unmatched,Jekyll & Hyde,jekyll-hyde,Medusa,medusa,4,0,0
 Unmatched,Jekyll & Hyde,jekyll-hyde,Moon Knight,moon-knight,30,8,26.67
 Unmatched,Jekyll & Hyde,jekyll-hyde,Ms. Marvel,ms-marvel,28,12,42.86
+Unmatched,Jekyll & Hyde,jekyll-hyde,Pandora,pandora,3,3,100
 Unmatched,Jekyll & Hyde,jekyll-hyde,Robin Hood,robin-hood,21,4,19.05
 Unmatched,Jekyll & Hyde,jekyll-hyde,Rosie the Riveter,rosie-the-riveter,1,0,0
 Unmatched,Jekyll & Hyde,jekyll-hyde,She-Hulk,she-hulk,4,2,50
@@ -1050,7 +1053,7 @@ Unmatched,John Henry,john-henry,Houdini,houdini,10,1,10
 Unmatched,John Henry,john-henry,InGen,ingen,20,12,60
 Unmatched,John Henry,john-henry,Invisible Man,invisible-man,8,4,50
 Unmatched,John Henry,john-henry,Jekyll & Hyde,jekyll-hyde,2,2,100
-Unmatched,John Henry,john-henry,Leonardo,leonardo,7,4,57.14
+Unmatched,John Henry,john-henry,Leonardo,leonardo,10,5,50
 Unmatched,John Henry,john-henry,Loki,loki,9,5,55.56
 Unmatched,John Henry,john-henry,Medusa,medusa,30,16,53.33
 Unmatched,John Henry,john-henry,Michelangelo,michelangelo,1,1,100
@@ -1058,7 +1061,7 @@ Unmatched,John Henry,john-henry,Moon Knight,moon-knight,34,17,50
 Unmatched,John Henry,john-henry,Nikola Tesla,nikola-tesla,32,19,59.38
 Unmatched,John Henry,john-henry,Pandora,pandora,11,5,45.45
 Unmatched,John Henry,john-henry,Robin Hood,robin-hood,6,5,83.33
-Unmatched,John Henry,john-henry,Rosie the Riveter,rosie-the-riveter,44,16,36.36
+Unmatched,John Henry,john-henry,Rosie the Riveter,rosie-the-riveter,45,16,35.56
 Unmatched,John Henry,john-henry,She-Hulk,she-hulk,3,0,0
 Unmatched,John Henry,john-henry,Sherlock Holmes,sherlock-holmes,4,1,25
 Unmatched,John Henry,john-henry,Sun Wukong,sun-wukong,23,10,43.48
@@ -1066,7 +1069,7 @@ Unmatched,John Henry,john-henry,T. Rex,t-rex,7,0,0
 Unmatched,John Henry,john-henry,The Genie,the-genie,31,19,61.29
 Unmatched,John Henry,john-henry,Titania,titania,7,6,85.71
 Unmatched,John Henry,john-henry,Tomoe Gozen,tomoe-gozen,43,29,67.44
-Unmatched,John Henry,john-henry,Wyatt Earp,wyatt-earp,76,44,57.89
+Unmatched,John Henry,john-henry,Wyatt Earp,wyatt-earp,77,45,58.44
 Unmatched,John Henry,john-henry,Yennefer & Triss,yennefer-triss,19,10,52.63
 Unmatched,John Henry,john-henry,Yennenga,yennenga,40,25,62.5
 Unmatched,Krang,krang,Bloody Mary,bloody-mary,1,1,100
@@ -1108,18 +1111,18 @@ Unmatched,Little Red Riding Hood,little-red-riding-hood,Black Panther,black-pant
 Unmatched,Little Red Riding Hood,little-red-riding-hood,Bloody Mary,bloody-mary,51,20,39.22
 Unmatched,Little Red Riding Hood,little-red-riding-hood,Bruce Lee,bruce-lee,105,57,54.29
 Unmatched,Little Red Riding Hood,little-red-riding-hood,Buffy,buffy,32,23,71.88
-Unmatched,Little Red Riding Hood,little-red-riding-hood,Bullseye,bullseye,83,58,69.88
+Unmatched,Little Red Riding Hood,little-red-riding-hood,Bullseye,bullseye,84,58,69.05
 Unmatched,Little Red Riding Hood,little-red-riding-hood,Chupacabra,chupacabra,42,20,47.62
 Unmatched,Little Red Riding Hood,little-red-riding-hood,Cloak & Dagger,cloak-dagger,42,29,69.05
 Unmatched,Little Red Riding Hood,little-red-riding-hood,Daredevil,daredevil,129,66,51.16
-Unmatched,Little Red Riding Hood,little-red-riding-hood,Donatello,donatello,41,26,63.41
+Unmatched,Little Red Riding Hood,little-red-riding-hood,Donatello,donatello,43,27,62.79
 Unmatched,Little Red Riding Hood,little-red-riding-hood,Dr. Jill Trent,dr-jill-trent,109,70,64.22
 Unmatched,Little Red Riding Hood,little-red-riding-hood,Dr. Sattler,dr-sattler,33,8,24.24
-Unmatched,Little Red Riding Hood,little-red-riding-hood,Dracula,dracula,119,51,42.86
-Unmatched,Little Red Riding Hood,little-red-riding-hood,Elektra,elektra,48,26,54.17
-Unmatched,Little Red Riding Hood,little-red-riding-hood,Eredin,eredin,16,5,31.25
+Unmatched,Little Red Riding Hood,little-red-riding-hood,Dracula,dracula,120,52,43.33
+Unmatched,Little Red Riding Hood,little-red-riding-hood,Elektra,elektra,49,27,55.1
+Unmatched,Little Red Riding Hood,little-red-riding-hood,Eredin,eredin,21,7,33.33
 Unmatched,Little Red Riding Hood,little-red-riding-hood,George Washington,george-washington,15,9,60
-Unmatched,Little Red Riding Hood,little-red-riding-hood,Geralt of Rivia,geralt-of-rivia,57,27,47.37
+Unmatched,Little Red Riding Hood,little-red-riding-hood,Geralt of Rivia,geralt-of-rivia,58,27,46.55
 Unmatched,Little Red Riding Hood,little-red-riding-hood,Ghost Rider,ghost-rider,41,26,63.41
 Unmatched,Little Red Riding Hood,little-red-riding-hood,Golden Bat,golden-bat,100,41,41
 Unmatched,Little Red Riding Hood,little-red-riding-hood,Hamlet,hamlet,11,7,63.64
@@ -1132,12 +1135,12 @@ Unmatched,Little Red Riding Hood,little-red-riding-hood,King Arthur,king-arthur,
 Unmatched,Little Red Riding Hood,little-red-riding-hood,Krang,krang,5,3,60
 Unmatched,Little Red Riding Hood,little-red-riding-hood,Leonardo,leonardo,47,23,48.94
 Unmatched,Little Red Riding Hood,little-red-riding-hood,Loki,loki,23,6,26.09
-Unmatched,Little Red Riding Hood,little-red-riding-hood,Luke Cage,luke-cage,229,127,55.46
+Unmatched,Little Red Riding Hood,little-red-riding-hood,Luke Cage,luke-cage,233,129,55.36
 Unmatched,Little Red Riding Hood,little-red-riding-hood,Medusa,medusa,74,21,28.38
 Unmatched,Little Red Riding Hood,little-red-riding-hood,Michelangelo,michelangelo,20,6,30
-Unmatched,Little Red Riding Hood,little-red-riding-hood,Moon Knight,moon-knight,122,42,34.43
+Unmatched,Little Red Riding Hood,little-red-riding-hood,Moon Knight,moon-knight,124,42,33.87
 Unmatched,Little Red Riding Hood,little-red-riding-hood,Ms. Marvel,ms-marvel,25,18,72
-Unmatched,Little Red Riding Hood,little-red-riding-hood,Nikola Tesla,nikola-tesla,174,92,52.87
+Unmatched,Little Red Riding Hood,little-red-riding-hood,Nikola Tesla,nikola-tesla,175,93,53.14
 Unmatched,Little Red Riding Hood,little-red-riding-hood,Pandora,pandora,33,15,45.45
 Unmatched,Little Red Riding Hood,little-red-riding-hood,Philippa,philippa,42,31,73.81
 Unmatched,Little Red Riding Hood,little-red-riding-hood,Robin Hood,robin-hood,122,79,64.75
@@ -1147,15 +1150,15 @@ Unmatched,Little Red Riding Hood,little-red-riding-hood,She-Hulk,she-hulk,34,9,2
 Unmatched,Little Red Riding Hood,little-red-riding-hood,Sherlock Holmes,sherlock-holmes,42,12,28.57
 Unmatched,Little Red Riding Hood,little-red-riding-hood,Spider-Man,spider-man,14,13,92.86
 Unmatched,Little Red Riding Hood,little-red-riding-hood,Spike,spike,2,2,100
-Unmatched,Little Red Riding Hood,little-red-riding-hood,Sun Wukong,sun-wukong,143,63,44.06
+Unmatched,Little Red Riding Hood,little-red-riding-hood,Sun Wukong,sun-wukong,145,65,44.83
 Unmatched,Little Red Riding Hood,little-red-riding-hood,T. Rex,t-rex,53,18,33.96
 Unmatched,Little Red Riding Hood,little-red-riding-hood,The Genie,the-genie,101,60,59.41
 Unmatched,Little Red Riding Hood,little-red-riding-hood,Titania,titania,71,44,61.97
 Unmatched,Little Red Riding Hood,little-red-riding-hood,Tomoe Gozen,tomoe-gozen,126,77,61.11
 Unmatched,Little Red Riding Hood,little-red-riding-hood,Willow,willow,1,1,100
 Unmatched,Little Red Riding Hood,little-red-riding-hood,Winter Soldier,winter-soldier,66,48,72.73
-Unmatched,Little Red Riding Hood,little-red-riding-hood,Wyatt Earp,wyatt-earp,106,73,68.87
-Unmatched,Little Red Riding Hood,little-red-riding-hood,Yennefer & Triss,yennefer-triss,82,40,48.78
+Unmatched,Little Red Riding Hood,little-red-riding-hood,Wyatt Earp,wyatt-earp,107,73,68.22
+Unmatched,Little Red Riding Hood,little-red-riding-hood,Yennefer & Triss,yennefer-triss,84,40,47.62
 Unmatched,Little Red Riding Hood,little-red-riding-hood,Yennenga,yennenga,228,124,54.39
 Unmatched,Liz Sherman,liz-sherman,Wyatt Earp,wyatt-earp,1,0,0
 Unmatched,Loki,loki,Alice,alice,56,25,44.64
@@ -1171,16 +1174,16 @@ Unmatched,Loki,loki,Michelangelo,michelangelo,18,1,5.56
 Unmatched,Loki,loki,Rosie the Riveter,rosie-the-riveter,18,7,38.89
 Unmatched,Loki,loki,Willow,willow,3,3,100
 Unmatched,Luke Cage,luke-cage,Alice,alice,89,46,51.69
-Unmatched,Luke Cage,luke-cage,Ancient Leshen,ancient-leshen,44,25,56.82
+Unmatched,Luke Cage,luke-cage,Ancient Leshen,ancient-leshen,45,25,55.56
 Unmatched,Luke Cage,luke-cage,Angel,angel,38,22,57.89
-Unmatched,Luke Cage,luke-cage,Annie Christmas,annie-christmas,95,38,40
+Unmatched,Luke Cage,luke-cage,Annie Christmas,annie-christmas,96,39,40.63
 Unmatched,Luke Cage,luke-cage,Beowulf,beowulf,66,37,56.06
 Unmatched,Luke Cage,luke-cage,Bigfoot,bigfoot,110,29,26.36
 Unmatched,Luke Cage,luke-cage,Black Panther,black-panther,71,46,64.79
 Unmatched,Luke Cage,luke-cage,Bloody Mary,bloody-mary,28,22,78.57
 Unmatched,Luke Cage,luke-cage,Bruce Lee,bruce-lee,23,17,73.91
 Unmatched,Luke Cage,luke-cage,Buffy,buffy,8,7,87.5
-Unmatched,Luke Cage,luke-cage,Bullseye,bullseye,34,31,91.18
+Unmatched,Luke Cage,luke-cage,Bullseye,bullseye,35,32,91.43
 Unmatched,Luke Cage,luke-cage,Chupacabra,chupacabra,3,2,66.67
 Unmatched,Luke Cage,luke-cage,Cloak & Dagger,cloak-dagger,7,5,71.43
 Unmatched,Luke Cage,luke-cage,Daredevil,daredevil,119,74,62.18
@@ -1192,10 +1195,10 @@ Unmatched,Luke Cage,luke-cage,Eredin,eredin,39,16,41.03
 Unmatched,Luke Cage,luke-cage,George Washington,george-washington,9,5,55.56
 Unmatched,Luke Cage,luke-cage,Geralt of Rivia,geralt-of-rivia,67,32,47.76
 Unmatched,Luke Cage,luke-cage,Ghost Rider,ghost-rider,89,53,59.55
-Unmatched,Luke Cage,luke-cage,Golden Bat,golden-bat,200,127,63.5
+Unmatched,Luke Cage,luke-cage,Golden Bat,golden-bat,203,129,63.55
 Unmatched,Luke Cage,luke-cage,Hamlet,hamlet,5,4,80
-Unmatched,Luke Cage,luke-cage,Houdini,houdini,192,68,35.42
-Unmatched,Luke Cage,luke-cage,InGen,ingen,76,54,71.05
+Unmatched,Luke Cage,luke-cage,Houdini,houdini,193,68,35.23
+Unmatched,Luke Cage,luke-cage,InGen,ingen,78,55,70.51
 Unmatched,Luke Cage,luke-cage,Invisible Man,invisible-man,59,25,42.37
 Unmatched,Luke Cage,luke-cage,Jekyll & Hyde,jekyll-hyde,60,38,63.33
 Unmatched,Luke Cage,luke-cage,John Henry,john-henry,21,13,61.9
@@ -1207,12 +1210,12 @@ Unmatched,Luke Cage,luke-cage,Medusa,medusa,97,35,36.08
 Unmatched,Luke Cage,luke-cage,Michelangelo,michelangelo,1,1,100
 Unmatched,Luke Cage,luke-cage,Moon Knight,moon-knight,202,95,47.03
 Unmatched,Luke Cage,luke-cage,Ms. Marvel,ms-marvel,7,6,85.71
-Unmatched,Luke Cage,luke-cage,Nikola Tesla,nikola-tesla,149,120,80.54
+Unmatched,Luke Cage,luke-cage,Nikola Tesla,nikola-tesla,150,121,80.67
 Unmatched,Luke Cage,luke-cage,Pandora,pandora,8,4,50
 Unmatched,Luke Cage,luke-cage,Robin Hood,robin-hood,21,18,85.71
 Unmatched,Luke Cage,luke-cage,Rosie the Riveter,rosie-the-riveter,3,3,100
 Unmatched,Luke Cage,luke-cage,Shakespeare,shakespeare,24,22,91.67
-Unmatched,Luke Cage,luke-cage,She-Hulk,she-hulk,134,64,47.76
+Unmatched,Luke Cage,luke-cage,She-Hulk,she-hulk,135,64,47.41
 Unmatched,Luke Cage,luke-cage,Sherlock Holmes,sherlock-holmes,10,2,20
 Unmatched,Luke Cage,luke-cage,Spider-Man,spider-man,7,5,71.43
 Unmatched,Luke Cage,luke-cage,Sun Wukong,sun-wukong,127,49,38.58
@@ -1221,8 +1224,8 @@ Unmatched,Luke Cage,luke-cage,The Genie,the-genie,40,36,90
 Unmatched,Luke Cage,luke-cage,Titania,titania,32,21,65.63
 Unmatched,Luke Cage,luke-cage,Tomoe Gozen,tomoe-gozen,73,52,71.23
 Unmatched,Luke Cage,luke-cage,Willow,willow,5,5,100
-Unmatched,Luke Cage,luke-cage,Wyatt Earp,wyatt-earp,43,25,58.14
-Unmatched,Luke Cage,luke-cage,Yennefer & Triss,yennefer-triss,105,59,56.19
+Unmatched,Luke Cage,luke-cage,Wyatt Earp,wyatt-earp,44,26,59.09
+Unmatched,Luke Cage,luke-cage,Yennefer & Triss,yennefer-triss,107,59,55.14
 Unmatched,Luke Cage,luke-cage,Yennenga,yennenga,166,94,56.63
 Unmatched,Medusa,medusa,Bloody Mary,bloody-mary,9,7,77.78
 Unmatched,Medusa,medusa,Dr. Sattler,dr-sattler,6,6,100
@@ -1235,7 +1238,7 @@ Unmatched,Michelangelo,michelangelo,Krang,krang,37,8,21.62
 Unmatched,Michelangelo,michelangelo,Medusa,medusa,1,1,100
 Unmatched,Moon Knight,moon-knight,Alice,alice,104,54,51.92
 Unmatched,Moon Knight,moon-knight,Ancient Leshen,ancient-leshen,22,5,22.73
-Unmatched,Moon Knight,moon-knight,Annie Christmas,annie-christmas,81,31,38.27
+Unmatched,Moon Knight,moon-knight,Annie Christmas,annie-christmas,82,32,39.02
 Unmatched,Moon Knight,moon-knight,Beowulf,beowulf,51,34,66.67
 Unmatched,Moon Knight,moon-knight,Bloody Mary,bloody-mary,39,32,82.05
 Unmatched,Moon Knight,moon-knight,Buffy,buffy,1,1,100
@@ -1279,14 +1282,14 @@ Unmatched,Muhammad Ali,muhammad-ali,Black Widow,black-widow,12,8,66.67
 Unmatched,Muhammad Ali,muhammad-ali,Bruce Lee,bruce-lee,86,28,32.56
 Unmatched,Muhammad Ali,muhammad-ali,Buffy,buffy,18,12,66.67
 Unmatched,Muhammad Ali,muhammad-ali,Bullseye,bullseye,7,3,42.86
-Unmatched,Muhammad Ali,muhammad-ali,Chupacabra,chupacabra,18,7,38.89
+Unmatched,Muhammad Ali,muhammad-ali,Chupacabra,chupacabra,19,8,42.11
 Unmatched,Muhammad Ali,muhammad-ali,Cloak & Dagger,cloak-dagger,4,3,75
 Unmatched,Muhammad Ali,muhammad-ali,Daredevil,daredevil,13,5,38.46
 Unmatched,Muhammad Ali,muhammad-ali,Donatello,donatello,40,16,40
 Unmatched,Muhammad Ali,muhammad-ali,Dr. Jill Trent,dr-jill-trent,3,2,66.67
 Unmatched,Muhammad Ali,muhammad-ali,Dr. Sattler,dr-sattler,2,1,50
 Unmatched,Muhammad Ali,muhammad-ali,Dracula,dracula,11,6,54.55
-Unmatched,Muhammad Ali,muhammad-ali,Eredin,eredin,15,9,60
+Unmatched,Muhammad Ali,muhammad-ali,Eredin,eredin,16,10,62.5
 Unmatched,Muhammad Ali,muhammad-ali,George Washington,george-washington,4,3,75
 Unmatched,Muhammad Ali,muhammad-ali,Geralt of Rivia,geralt-of-rivia,22,12,54.55
 Unmatched,Muhammad Ali,muhammad-ali,Golden Bat,golden-bat,1,1,100
@@ -1297,12 +1300,12 @@ Unmatched,Muhammad Ali,muhammad-ali,John Henry,john-henry,10,4,40
 Unmatched,Muhammad Ali,muhammad-ali,King Arthur,king-arthur,4,3,75
 Unmatched,Muhammad Ali,muhammad-ali,Krang,krang,18,8,44.44
 Unmatched,Muhammad Ali,muhammad-ali,Leonardo,leonardo,53,23,43.4
-Unmatched,Muhammad Ali,muhammad-ali,Little Red Riding Hood,little-red-riding-hood,98,59,60.2
+Unmatched,Muhammad Ali,muhammad-ali,Little Red Riding Hood,little-red-riding-hood,99,59,59.6
 Unmatched,Muhammad Ali,muhammad-ali,Loki,loki,10,9,90
-Unmatched,Muhammad Ali,muhammad-ali,Luke Cage,luke-cage,11,6,54.55
+Unmatched,Muhammad Ali,muhammad-ali,Luke Cage,luke-cage,12,6,50
 Unmatched,Muhammad Ali,muhammad-ali,Medusa,medusa,9,6,66.67
 Unmatched,Muhammad Ali,muhammad-ali,Michelangelo,michelangelo,27,15,55.56
-Unmatched,Muhammad Ali,muhammad-ali,Moon Knight,moon-knight,15,7,46.67
+Unmatched,Muhammad Ali,muhammad-ali,Moon Knight,moon-knight,16,8,50
 Unmatched,Muhammad Ali,muhammad-ali,Ms. Marvel,ms-marvel,1,1,100
 Unmatched,Muhammad Ali,muhammad-ali,Nikola Tesla,nikola-tesla,36,18,50
 Unmatched,Muhammad Ali,muhammad-ali,Pandora,pandora,6,5,83.33
@@ -1324,24 +1327,24 @@ Unmatched,Muhammad Ali,muhammad-ali,Yennenga,yennenga,10,2,20
 Unmatched,Nikola Tesla,nikola-tesla,Alice,alice,23,11,47.83
 Unmatched,Nikola Tesla,nikola-tesla,Ancient Leshen,ancient-leshen,29,20,68.97
 Unmatched,Nikola Tesla,nikola-tesla,Angel,angel,1,1,100
-Unmatched,Nikola Tesla,nikola-tesla,Annie Christmas,annie-christmas,75,37,49.33
+Unmatched,Nikola Tesla,nikola-tesla,Annie Christmas,annie-christmas,76,38,50
 Unmatched,Nikola Tesla,nikola-tesla,Beowulf,beowulf,2,2,100
 Unmatched,Nikola Tesla,nikola-tesla,Black Panther,black-panther,59,41,69.49
 Unmatched,Nikola Tesla,nikola-tesla,Bloody Mary,bloody-mary,9,6,66.67
 Unmatched,Nikola Tesla,nikola-tesla,Bruce Lee,bruce-lee,49,18,36.73
 Unmatched,Nikola Tesla,nikola-tesla,Buffy,buffy,2,2,100
-Unmatched,Nikola Tesla,nikola-tesla,Bullseye,bullseye,77,54,70.13
+Unmatched,Nikola Tesla,nikola-tesla,Bullseye,bullseye,79,55,69.62
 Unmatched,Nikola Tesla,nikola-tesla,Chupacabra,chupacabra,24,14,58.33
 Unmatched,Nikola Tesla,nikola-tesla,Cloak & Dagger,cloak-dagger,21,13,61.9
 Unmatched,Nikola Tesla,nikola-tesla,Daredevil,daredevil,61,46,75.41
-Unmatched,Nikola Tesla,nikola-tesla,Donatello,donatello,47,21,44.68
+Unmatched,Nikola Tesla,nikola-tesla,Donatello,donatello,48,22,45.83
 Unmatched,Nikola Tesla,nikola-tesla,Dr. Sattler,dr-sattler,11,10,90.91
-Unmatched,Nikola Tesla,nikola-tesla,Dracula,dracula,20,16,80
-Unmatched,Nikola Tesla,nikola-tesla,Elektra,elektra,27,12,44.44
-Unmatched,Nikola Tesla,nikola-tesla,Eredin,eredin,56,28,50
+Unmatched,Nikola Tesla,nikola-tesla,Dracula,dracula,21,17,80.95
+Unmatched,Nikola Tesla,nikola-tesla,Elektra,elektra,29,14,48.28
+Unmatched,Nikola Tesla,nikola-tesla,Eredin,eredin,58,29,50
 Unmatched,Nikola Tesla,nikola-tesla,George Washington,george-washington,7,6,85.71
 Unmatched,Nikola Tesla,nikola-tesla,Ghost Rider,ghost-rider,20,14,70
-Unmatched,Nikola Tesla,nikola-tesla,Golden Bat,golden-bat,258,122,47.29
+Unmatched,Nikola Tesla,nikola-tesla,Golden Bat,golden-bat,260,124,47.69
 Unmatched,Nikola Tesla,nikola-tesla,Hamlet,hamlet,3,1,33.33
 Unmatched,Nikola Tesla,nikola-tesla,Houdini,houdini,130,34,26.15
 Unmatched,Nikola Tesla,nikola-tesla,InGen,ingen,37,34,91.89
@@ -1353,22 +1356,22 @@ Unmatched,Nikola Tesla,nikola-tesla,Leonardo,leonardo,16,11,68.75
 Unmatched,Nikola Tesla,nikola-tesla,Loki,loki,30,16,53.33
 Unmatched,Nikola Tesla,nikola-tesla,Medusa,medusa,215,119,55.35
 Unmatched,Nikola Tesla,nikola-tesla,Michelangelo,michelangelo,17,10,58.82
-Unmatched,Nikola Tesla,nikola-tesla,Moon Knight,moon-knight,60,22,36.67
+Unmatched,Nikola Tesla,nikola-tesla,Moon Knight,moon-knight,61,23,37.7
 Unmatched,Nikola Tesla,nikola-tesla,Ms. Marvel,ms-marvel,14,7,50
 Unmatched,Nikola Tesla,nikola-tesla,Pandora,pandora,20,12,60
 Unmatched,Nikola Tesla,nikola-tesla,Robin Hood,robin-hood,46,36,78.26
 Unmatched,Nikola Tesla,nikola-tesla,Rosie the Riveter,rosie-the-riveter,17,3,17.65
 Unmatched,Nikola Tesla,nikola-tesla,Shakespeare,shakespeare,18,12,66.67
-Unmatched,Nikola Tesla,nikola-tesla,She-Hulk,she-hulk,110,48,43.64
+Unmatched,Nikola Tesla,nikola-tesla,She-Hulk,she-hulk,112,48,42.86
 Unmatched,Nikola Tesla,nikola-tesla,Sherlock Holmes,sherlock-holmes,10,4,40
 Unmatched,Nikola Tesla,nikola-tesla,Spider-Man,spider-man,3,1,33.33
-Unmatched,Nikola Tesla,nikola-tesla,Sun Wukong,sun-wukong,141,86,60.99
+Unmatched,Nikola Tesla,nikola-tesla,Sun Wukong,sun-wukong,145,88,60.69
 Unmatched,Nikola Tesla,nikola-tesla,The Genie,the-genie,63,42,66.67
 Unmatched,Nikola Tesla,nikola-tesla,Titania,titania,44,24,54.55
 Unmatched,Nikola Tesla,nikola-tesla,Tomoe Gozen,tomoe-gozen,214,99,46.26
-Unmatched,Nikola Tesla,nikola-tesla,Wyatt Earp,wyatt-earp,58,34,58.62
-Unmatched,Nikola Tesla,nikola-tesla,Yennefer & Triss,yennefer-triss,133,62,46.62
-Unmatched,Nikola Tesla,nikola-tesla,Yennenga,yennenga,165,99,60
+Unmatched,Nikola Tesla,nikola-tesla,Wyatt Earp,wyatt-earp,60,34,56.67
+Unmatched,Nikola Tesla,nikola-tesla,Yennefer & Triss,yennefer-triss,134,62,46.27
+Unmatched,Nikola Tesla,nikola-tesla,Yennenga,yennenga,166,99,59.64
 Unmatched,Oda Nobunaga,oda-nobunaga,Achilles,achilles,23,5,21.74
 Unmatched,Oda Nobunaga,oda-nobunaga,Alice,alice,7,4,57.14
 Unmatched,Oda Nobunaga,oda-nobunaga,Angel,angel,3,2,66.67
@@ -1434,7 +1437,7 @@ Unmatched,Pandora,pandora,Dr. Sattler,dr-sattler,3,1,33.33
 Unmatched,Pandora,pandora,Dracula,dracula,11,4,36.36
 Unmatched,Pandora,pandora,Eredin,eredin,7,2,28.57
 Unmatched,Pandora,pandora,George Washington,george-washington,12,5,41.67
-Unmatched,Pandora,pandora,Hamlet,hamlet,10,9,90
+Unmatched,Pandora,pandora,Hamlet,hamlet,13,11,84.62
 Unmatched,Pandora,pandora,Hellboy,hellboy,2,0,0
 Unmatched,Pandora,pandora,InGen,ingen,6,3,50
 Unmatched,Pandora,pandora,Invisible Man,invisible-man,6,4,66.67
@@ -1453,7 +1456,7 @@ Unmatched,Pandora,pandora,The Genie,the-genie,46,15,32.61
 Unmatched,Pandora,pandora,Titania,titania,8,4,50
 Unmatched,Pandora,pandora,Tomoe Gozen,tomoe-gozen,32,13,40.63
 Unmatched,Pandora,pandora,Wyatt Earp,wyatt-earp,54,25,46.3
-Unmatched,Pandora,pandora,Yennefer & Triss,yennefer-triss,26,13,50
+Unmatched,Pandora,pandora,Yennefer & Triss,yennefer-triss,27,14,51.85
 Unmatched,Pandora,pandora,Yennenga,yennenga,73,32,43.84
 Unmatched,Philippa,philippa,Alice,alice,51,24,47.06
 Unmatched,Philippa,philippa,Ancient Leshen,ancient-leshen,39,23,58.97
@@ -1472,7 +1475,7 @@ Unmatched,Philippa,philippa,Donatello,donatello,2,2,100
 Unmatched,Philippa,philippa,Dr. Jill Trent,dr-jill-trent,7,0,0
 Unmatched,Philippa,philippa,Dr. Sattler,dr-sattler,24,15,62.5
 Unmatched,Philippa,philippa,Dracula,dracula,11,6,54.55
-Unmatched,Philippa,philippa,Elektra,elektra,4,1,25
+Unmatched,Philippa,philippa,Elektra,elektra,5,2,40
 Unmatched,Philippa,philippa,Eredin,eredin,67,20,29.85
 Unmatched,Philippa,philippa,George Washington,george-washington,8,3,37.5
 Unmatched,Philippa,philippa,Geralt of Rivia,geralt-of-rivia,32,13,40.63
@@ -1510,7 +1513,7 @@ Unmatched,Raphael,raphael,Achilles,achilles,22,8,36.36
 Unmatched,Raphael,raphael,Alice,alice,20,11,55
 Unmatched,Raphael,raphael,Ancient Leshen,ancient-leshen,8,5,62.5
 Unmatched,Raphael,raphael,Annie Christmas,annie-christmas,28,15,53.57
-Unmatched,Raphael,raphael,Bigfoot,bigfoot,35,20,57.14
+Unmatched,Raphael,raphael,Bigfoot,bigfoot,36,21,58.33
 Unmatched,Raphael,raphael,Black Panther,black-panther,3,2,66.67
 Unmatched,Raphael,raphael,Black Widow,black-widow,24,13,54.17
 Unmatched,Raphael,raphael,Blackbeard,blackbeard,58,27,46.55
@@ -1531,7 +1534,7 @@ Unmatched,Raphael,raphael,Golden Bat,golden-bat,45,34,75.56
 Unmatched,Raphael,raphael,Houdini,houdini,35,9,25.71
 Unmatched,Raphael,raphael,InGen,ingen,13,4,30.77
 Unmatched,Raphael,raphael,Invisible Man,invisible-man,9,5,55.56
-Unmatched,Raphael,raphael,John Henry,john-henry,29,18,62.07
+Unmatched,Raphael,raphael,John Henry,john-henry,30,19,63.33
 Unmatched,Raphael,raphael,Krang,krang,59,43,72.88
 Unmatched,Raphael,raphael,Leonardo,leonardo,48,37,77.08
 Unmatched,Raphael,raphael,Little Red Riding Hood,little-red-riding-hood,27,21,77.78
@@ -1551,12 +1554,12 @@ Unmatched,Raphael,raphael,Shakespeare,shakespeare,1,1,100
 Unmatched,Raphael,raphael,She-Hulk,she-hulk,16,10,62.5
 Unmatched,Raphael,raphael,Sherlock Holmes,sherlock-holmes,16,9,56.25
 Unmatched,Raphael,raphael,Shredder,shredder,95,44,46.32
-Unmatched,Raphael,raphael,Sun Wukong,sun-wukong,30,14,46.67
+Unmatched,Raphael,raphael,Sun Wukong,sun-wukong,33,15,45.45
 Unmatched,Raphael,raphael,T. Rex,t-rex,8,3,37.5
 Unmatched,Raphael,raphael,The Genie,the-genie,56,19,33.93
 Unmatched,Raphael,raphael,Titania,titania,12,10,83.33
 Unmatched,Raphael,raphael,Tomoe Gozen,tomoe-gozen,26,19,73.08
-Unmatched,Raphael,raphael,Wyatt Earp,wyatt-earp,64,38,59.38
+Unmatched,Raphael,raphael,Wyatt Earp,wyatt-earp,65,38,58.46
 Unmatched,Raphael,raphael,Yennefer & Triss,yennefer-triss,78,43,55.13
 Unmatched,Raphael,raphael,Yennenga,yennenga,24,11,45.83
 Unmatched,Raptors,raptors,Achilles,achilles,45,17,37.78
@@ -1569,7 +1572,7 @@ Unmatched,Raptors,raptors,Bigfoot,bigfoot,45,13,28.89
 Unmatched,Raptors,raptors,Black Panther,black-panther,29,24,82.76
 Unmatched,Raptors,raptors,Black Widow,black-widow,77,38,49.35
 Unmatched,Raptors,raptors,Bloody Mary,bloody-mary,22,18,81.82
-Unmatched,Raptors,raptors,Bruce Lee,bruce-lee,61,24,39.34
+Unmatched,Raptors,raptors,Bruce Lee,bruce-lee,65,25,38.46
 Unmatched,Raptors,raptors,Buffy,buffy,22,8,36.36
 Unmatched,Raptors,raptors,Bullseye,bullseye,41,24,58.54
 Unmatched,Raptors,raptors,Chupacabra,chupacabra,20,4,20
@@ -1580,7 +1583,7 @@ Unmatched,Raptors,raptors,Doctor Strange,doctor-strange,2,0,0
 Unmatched,Raptors,raptors,Donatello,donatello,19,6,31.58
 Unmatched,Raptors,raptors,Dr. Jill Trent,dr-jill-trent,44,24,54.55
 Unmatched,Raptors,raptors,Dr. Sattler,dr-sattler,18,12,66.67
-Unmatched,Raptors,raptors,Dracula,dracula,70,38,54.29
+Unmatched,Raptors,raptors,Dracula,dracula,71,39,54.93
 Unmatched,Raptors,raptors,Elektra,elektra,16,1,6.25
 Unmatched,Raptors,raptors,Eredin,eredin,7,1,14.29
 Unmatched,Raptors,raptors,George Washington,george-washington,14,12,85.71
@@ -1604,7 +1607,7 @@ Unmatched,Raptors,raptors,Michelangelo,michelangelo,9,1,11.11
 Unmatched,Raptors,raptors,Moon Knight,moon-knight,93,59,63.44
 Unmatched,Raptors,raptors,Ms. Marvel,ms-marvel,32,21,65.63
 Unmatched,Raptors,raptors,Muhammad Ali,muhammad-ali,9,6,66.67
-Unmatched,Raptors,raptors,Nikola Tesla,nikola-tesla,103,65,63.11
+Unmatched,Raptors,raptors,Nikola Tesla,nikola-tesla,104,65,62.5
 Unmatched,Raptors,raptors,Pandora,pandora,55,26,47.27
 Unmatched,Raptors,raptors,Philippa,philippa,52,30,57.69
 Unmatched,Raptors,raptors,Robin Hood,robin-hood,57,20,35.09
@@ -1653,7 +1656,7 @@ Unmatched,Robin Hood,robin-hood,Wyatt Earp,wyatt-earp,23,8,34.78
 Unmatched,Robin Hood,robin-hood,Yennenga,yennenga,102,22,21.57
 Unmatched,Rosie the Riveter,rosie-the-riveter,Alice,alice,7,3,42.86
 Unmatched,Rosie the Riveter,rosie-the-riveter,Dr. Sattler,dr-sattler,2,1,50
-Unmatched,Rosie the Riveter,rosie-the-riveter,George Washington,george-washington,25,19,76
+Unmatched,Rosie the Riveter,rosie-the-riveter,George Washington,george-washington,28,21,75
 Unmatched,Rosie the Riveter,rosie-the-riveter,Medusa,medusa,6,2,33.33
 Unmatched,Shakespeare,shakespeare,Alice,alice,46,26,56.52
 Unmatched,Shakespeare,shakespeare,Ancient Leshen,ancient-leshen,11,9,81.82
@@ -1696,7 +1699,7 @@ Unmatched,She-Hulk,she-hulk,Alice,alice,18,8,44.44
 Unmatched,She-Hulk,she-hulk,Ancient Leshen,ancient-leshen,12,6,50
 Unmatched,She-Hulk,she-hulk,Annie Christmas,annie-christmas,14,8,57.14
 Unmatched,She-Hulk,she-hulk,Beowulf,beowulf,7,5,71.43
-Unmatched,She-Hulk,she-hulk,Black Panther,black-panther,36,28,77.78
+Unmatched,She-Hulk,she-hulk,Black Panther,black-panther,39,30,76.92
 Unmatched,She-Hulk,she-hulk,Bloody Mary,bloody-mary,8,6,75
 Unmatched,She-Hulk,she-hulk,Bullseye,bullseye,9,7,77.78
 Unmatched,She-Hulk,she-hulk,Chupacabra,chupacabra,2,2,100
@@ -1708,23 +1711,23 @@ Unmatched,She-Hulk,she-hulk,Eredin,eredin,23,6,26.09
 Unmatched,She-Hulk,she-hulk,Ghost Rider,ghost-rider,13,12,92.31
 Unmatched,She-Hulk,she-hulk,Golden Bat,golden-bat,78,18,23.08
 Unmatched,She-Hulk,she-hulk,Hamlet,hamlet,3,3,100
-Unmatched,She-Hulk,she-hulk,InGen,ingen,25,15,60
+Unmatched,She-Hulk,she-hulk,InGen,ingen,26,15,57.69
 Unmatched,She-Hulk,she-hulk,Invisible Man,invisible-man,2,1,50
 Unmatched,She-Hulk,she-hulk,Krang,krang,1,1,100
 Unmatched,She-Hulk,she-hulk,Leonardo,leonardo,1,1,100
 Unmatched,She-Hulk,she-hulk,Loki,loki,7,3,42.86
 Unmatched,She-Hulk,she-hulk,Medusa,medusa,95,47,49.47
-Unmatched,She-Hulk,she-hulk,Moon Knight,moon-knight,89,42,47.19
+Unmatched,She-Hulk,she-hulk,Moon Knight,moon-knight,90,43,47.78
 Unmatched,She-Hulk,she-hulk,Ms. Marvel,ms-marvel,11,7,63.64
 Unmatched,She-Hulk,she-hulk,Pandora,pandora,5,4,80
-Unmatched,She-Hulk,she-hulk,Robin Hood,robin-hood,11,7,63.64
+Unmatched,She-Hulk,she-hulk,Robin Hood,robin-hood,12,8,66.67
 Unmatched,She-Hulk,she-hulk,Rosie the Riveter,rosie-the-riveter,1,1,100
 Unmatched,She-Hulk,she-hulk,Sherlock Holmes,sherlock-holmes,24,9,37.5
 Unmatched,She-Hulk,she-hulk,Sun Wukong,sun-wukong,98,51,52.04
 Unmatched,She-Hulk,she-hulk,The Genie,the-genie,5,4,80
 Unmatched,She-Hulk,she-hulk,Titania,titania,5,3,60
-Unmatched,She-Hulk,she-hulk,Tomoe Gozen,tomoe-gozen,70,23,32.86
-Unmatched,She-Hulk,she-hulk,Wyatt Earp,wyatt-earp,2,2,100
+Unmatched,She-Hulk,she-hulk,Tomoe Gozen,tomoe-gozen,72,23,31.94
+Unmatched,She-Hulk,she-hulk,Wyatt Earp,wyatt-earp,3,3,100
 Unmatched,She-Hulk,she-hulk,Yennefer & Triss,yennefer-triss,38,20,52.63
 Unmatched,She-Hulk,she-hulk,Yennenga,yennenga,89,56,62.92
 Unmatched,Sherlock Holmes,sherlock-holmes,Alice,alice,10,6,60
@@ -1754,13 +1757,13 @@ Unmatched,Shredder,shredder,Bullseye,bullseye,4,3,75
 Unmatched,Shredder,shredder,Chupacabra,chupacabra,26,18,69.23
 Unmatched,Shredder,shredder,Cloak & Dagger,cloak-dagger,1,0,0
 Unmatched,Shredder,shredder,Daredevil,daredevil,65,42,64.62
-Unmatched,Shredder,shredder,Donatello,donatello,54,27,50
+Unmatched,Shredder,shredder,Donatello,donatello,55,27,49.09
 Unmatched,Shredder,shredder,Dr. Jill Trent,dr-jill-trent,54,36,66.67
 Unmatched,Shredder,shredder,Dr. Sattler,dr-sattler,13,8,61.54
 Unmatched,Shredder,shredder,Dracula,dracula,5,2,40
-Unmatched,Shredder,shredder,Eredin,eredin,70,34,48.57
+Unmatched,Shredder,shredder,Eredin,eredin,71,35,49.3
 Unmatched,Shredder,shredder,George Washington,george-washington,16,7,43.75
-Unmatched,Shredder,shredder,Geralt of Rivia,geralt-of-rivia,26,15,57.69
+Unmatched,Shredder,shredder,Geralt of Rivia,geralt-of-rivia,27,15,55.56
 Unmatched,Shredder,shredder,Golden Bat,golden-bat,4,2,50
 Unmatched,Shredder,shredder,Houdini,houdini,9,3,33.33
 Unmatched,Shredder,shredder,InGen,ingen,4,2,50
@@ -1769,13 +1772,13 @@ Unmatched,Shredder,shredder,Krang,krang,44,33,75
 Unmatched,Shredder,shredder,Leonardo,leonardo,36,9,25
 Unmatched,Shredder,shredder,Little Red Riding Hood,little-red-riding-hood,27,12,44.44
 Unmatched,Shredder,shredder,Loki,loki,17,8,47.06
-Unmatched,Shredder,shredder,Luke Cage,luke-cage,15,6,40
+Unmatched,Shredder,shredder,Luke Cage,luke-cage,16,7,43.75
 Unmatched,Shredder,shredder,Medusa,medusa,5,0,0
 Unmatched,Shredder,shredder,Michelangelo,michelangelo,47,19,40.43
 Unmatched,Shredder,shredder,Moon Knight,moon-knight,45,27,60
 Unmatched,Shredder,shredder,Muhammad Ali,muhammad-ali,29,18,62.07
-Unmatched,Shredder,shredder,Nikola Tesla,nikola-tesla,19,13,68.42
-Unmatched,Shredder,shredder,Pandora,pandora,3,2,66.67
+Unmatched,Shredder,shredder,Nikola Tesla,nikola-tesla,20,14,70
+Unmatched,Shredder,shredder,Pandora,pandora,4,3,75
 Unmatched,Shredder,shredder,Philippa,philippa,1,1,100
 Unmatched,Shredder,shredder,Robin Hood,robin-hood,17,11,64.71
 Unmatched,Shredder,shredder,Rosie the Riveter,rosie-the-riveter,5,1,20
@@ -1791,11 +1794,11 @@ Unmatched,Shredder,shredder,Winter Soldier,winter-soldier,1,0,0
 Unmatched,Shredder,shredder,Wyatt Earp,wyatt-earp,9,3,33.33
 Unmatched,Shredder,shredder,Yennefer & Triss,yennefer-triss,21,10,47.62
 Unmatched,Shredder,shredder,Yennenga,yennenga,21,10,47.62
-Unmatched,Sinbad,sinbad,Achilles,achilles,127,46,36.22
+Unmatched,Sinbad,sinbad,Achilles,achilles,128,47,36.72
 Unmatched,Sinbad,sinbad,Alice,alice,90,38,42.22
 Unmatched,Sinbad,sinbad,Ancient Leshen,ancient-leshen,35,18,51.43
 Unmatched,Sinbad,sinbad,Angel,angel,2,2,100
-Unmatched,Sinbad,sinbad,Annie Christmas,annie-christmas,53,24,45.28
+Unmatched,Sinbad,sinbad,Annie Christmas,annie-christmas,55,25,45.45
 Unmatched,Sinbad,sinbad,Baba Yaga,baba-yaga,1,1,100
 Unmatched,Sinbad,sinbad,Beowulf,beowulf,23,19,82.61
 Unmatched,Sinbad,sinbad,Bigfoot,bigfoot,78,18,23.08
@@ -1817,29 +1820,29 @@ Unmatched,Sinbad,sinbad,Dr. Jill Trent,dr-jill-trent,152,77,50.66
 Unmatched,Sinbad,sinbad,Dr. Sattler,dr-sattler,52,27,51.92
 Unmatched,Sinbad,sinbad,Dracula,dracula,59,14,23.73
 Unmatched,Sinbad,sinbad,Elektra,elektra,17,4,23.53
-Unmatched,Sinbad,sinbad,Eredin,eredin,56,28,50
+Unmatched,Sinbad,sinbad,Eredin,eredin,60,31,51.67
 Unmatched,Sinbad,sinbad,George Washington,george-washington,11,6,54.55
 Unmatched,Sinbad,sinbad,Geralt of Rivia,geralt-of-rivia,14,10,71.43
 Unmatched,Sinbad,sinbad,Ghost Rider,ghost-rider,32,17,53.13
 Unmatched,Sinbad,sinbad,Golden Bat,golden-bat,80,43,53.75
 Unmatched,Sinbad,sinbad,Hamlet,hamlet,33,21,63.64
-Unmatched,Sinbad,sinbad,Houdini,houdini,65,26,40
-Unmatched,Sinbad,sinbad,InGen,ingen,41,10,24.39
+Unmatched,Sinbad,sinbad,Houdini,houdini,66,26,39.39
+Unmatched,Sinbad,sinbad,InGen,ingen,42,10,23.81
 Unmatched,Sinbad,sinbad,Invisible Man,invisible-man,24,22,91.67
 Unmatched,Sinbad,sinbad,Jekyll & Hyde,jekyll-hyde,17,9,52.94
 Unmatched,Sinbad,sinbad,John Henry,john-henry,1,1,100
 Unmatched,Sinbad,sinbad,King Arthur,king-arthur,26,14,53.85
 Unmatched,Sinbad,sinbad,Krang,krang,7,6,85.71
 Unmatched,Sinbad,sinbad,Leonardo,leonardo,7,4,57.14
-Unmatched,Sinbad,sinbad,Little Red Riding Hood,little-red-riding-hood,92,71,77.17
-Unmatched,Sinbad,sinbad,Loki,loki,45,22,48.89
-Unmatched,Sinbad,sinbad,Luke Cage,luke-cage,44,14,31.82
+Unmatched,Sinbad,sinbad,Little Red Riding Hood,little-red-riding-hood,93,71,76.34
+Unmatched,Sinbad,sinbad,Loki,loki,46,22,47.83
+Unmatched,Sinbad,sinbad,Luke Cage,luke-cage,45,15,33.33
 Unmatched,Sinbad,sinbad,Medusa,medusa,76,23,30.26
 Unmatched,Sinbad,sinbad,Michelangelo,michelangelo,1,1,100
-Unmatched,Sinbad,sinbad,Moon Knight,moon-knight,107,43,40.19
+Unmatched,Sinbad,sinbad,Moon Knight,moon-knight,108,43,39.81
 Unmatched,Sinbad,sinbad,Ms. Marvel,ms-marvel,17,11,64.71
 Unmatched,Sinbad,sinbad,Muhammad Ali,muhammad-ali,3,3,100
-Unmatched,Sinbad,sinbad,Nikola Tesla,nikola-tesla,74,42,56.76
+Unmatched,Sinbad,sinbad,Nikola Tesla,nikola-tesla,75,43,57.33
 Unmatched,Sinbad,sinbad,Pandora,pandora,34,11,32.35
 Unmatched,Sinbad,sinbad,Philippa,philippa,8,5,62.5
 Unmatched,Sinbad,sinbad,Raphael,raphael,19,12,63.16
@@ -1847,7 +1850,7 @@ Unmatched,Sinbad,sinbad,Raptors,raptors,42,30,71.43
 Unmatched,Sinbad,sinbad,Robin Hood,robin-hood,85,47,55.29
 Unmatched,Sinbad,sinbad,Rosie the Riveter,rosie-the-riveter,1,1,100
 Unmatched,Sinbad,sinbad,Shakespeare,shakespeare,50,16,32
-Unmatched,Sinbad,sinbad,She-Hulk,she-hulk,37,20,54.05
+Unmatched,Sinbad,sinbad,She-Hulk,she-hulk,38,20,52.63
 Unmatched,Sinbad,sinbad,Sherlock Holmes,sherlock-holmes,46,19,41.3
 Unmatched,Sinbad,sinbad,Shredder,shredder,65,25,38.46
 Unmatched,Sinbad,sinbad,Spider-Man,spider-man,1,1,100
@@ -1857,11 +1860,11 @@ Unmatched,Sinbad,sinbad,Sun Wukong,sun-wukong,51,8,15.69
 Unmatched,Sinbad,sinbad,T. Rex,t-rex,55,21,38.18
 Unmatched,Sinbad,sinbad,The Genie,the-genie,25,18,72
 Unmatched,Sinbad,sinbad,Titania,titania,39,16,41.03
-Unmatched,Sinbad,sinbad,Tomoe Gozen,tomoe-gozen,50,29,58
+Unmatched,Sinbad,sinbad,Tomoe Gozen,tomoe-gozen,51,30,58.82
 Unmatched,Sinbad,sinbad,Willow,willow,6,6,100
 Unmatched,Sinbad,sinbad,Winter Soldier,winter-soldier,24,11,45.83
-Unmatched,Sinbad,sinbad,Wyatt Earp,wyatt-earp,5,4,80
-Unmatched,Sinbad,sinbad,Yennefer & Triss,yennefer-triss,56,43,76.79
+Unmatched,Sinbad,sinbad,Wyatt Earp,wyatt-earp,6,5,83.33
+Unmatched,Sinbad,sinbad,Yennefer & Triss,yennefer-triss,58,43,74.14
 Unmatched,Sinbad,sinbad,Yennenga,yennenga,147,135,91.84
 Unmatched,Spider-Man,spider-man,Alice,alice,4,3,75
 Unmatched,Spider-Man,spider-man,Ancient Leshen,ancient-leshen,7,2,28.57
@@ -1972,7 +1975,7 @@ Unmatched,Squirrel Girl,squirrel-girl,Yennenga,yennenga,12,3,25
 Unmatched,Sun Wukong,sun-wukong,Alice,alice,23,21,91.3
 Unmatched,Sun Wukong,sun-wukong,Ancient Leshen,ancient-leshen,23,14,60.87
 Unmatched,Sun Wukong,sun-wukong,Bloody Mary,bloody-mary,39,32,82.05
-Unmatched,Sun Wukong,sun-wukong,Buffy,buffy,30,15,50
+Unmatched,Sun Wukong,sun-wukong,Buffy,buffy,31,16,51.61
 Unmatched,Sun Wukong,sun-wukong,Chupacabra,chupacabra,27,22,81.48
 Unmatched,Sun Wukong,sun-wukong,Cloak & Dagger,cloak-dagger,5,4,80
 Unmatched,Sun Wukong,sun-wukong,Dr. Sattler,dr-sattler,16,11,68.75
@@ -1985,7 +1988,7 @@ Unmatched,Sun Wukong,sun-wukong,Loki,loki,31,21,67.74
 Unmatched,Sun Wukong,sun-wukong,Medusa,medusa,115,34,29.57
 Unmatched,Sun Wukong,sun-wukong,Rosie the Riveter,rosie-the-riveter,6,2,33.33
 Unmatched,Sun Wukong,sun-wukong,Willow,willow,1,1,100
-Unmatched,Sun Wukong,sun-wukong,Wyatt Earp,wyatt-earp,80,36,45
+Unmatched,Sun Wukong,sun-wukong,Wyatt Earp,wyatt-earp,81,36,44.44
 Unmatched,T. Rex,t-rex,Alice,alice,118,51,43.22
 Unmatched,T. Rex,t-rex,Ancient Leshen,ancient-leshen,21,20,95.24
 Unmatched,T. Rex,t-rex,Annie Christmas,annie-christmas,30,12,40
@@ -2054,6 +2057,7 @@ Unmatched,The Genie,the-genie,InGen,ingen,61,30,49.18
 Unmatched,The Genie,the-genie,Invisible Man,invisible-man,10,7,70
 Unmatched,The Genie,the-genie,King Arthur,king-arthur,7,5,71.43
 Unmatched,The Genie,the-genie,Krang,krang,20,8,40
+Unmatched,The Genie,the-genie,Liz Sherman,liz-sherman,1,1,100
 Unmatched,The Genie,the-genie,Loki,loki,50,32,64
 Unmatched,The Genie,the-genie,Medusa,medusa,33,9,27.27
 Unmatched,The Genie,the-genie,Michelangelo,michelangelo,23,18,78.26
@@ -2156,7 +2160,7 @@ Unmatched,Titania,titania,Robin Hood,robin-hood,31,16,51.61
 Unmatched,Titania,titania,Rosie the Riveter,rosie-the-riveter,4,3,75
 Unmatched,Titania,titania,Sherlock Holmes,sherlock-holmes,27,17,62.96
 Unmatched,Titania,titania,Sun Wukong,sun-wukong,16,3,18.75
-Unmatched,Titania,titania,Tomoe Gozen,tomoe-gozen,120,58,48.33
+Unmatched,Titania,titania,Tomoe Gozen,tomoe-gozen,121,58,47.93
 Unmatched,Titania,titania,Yennenga,yennenga,10,2,20
 Unmatched,Tomoe Gozen,tomoe-gozen,Alice,alice,41,21,51.22
 Unmatched,Tomoe Gozen,tomoe-gozen,Ancient Leshen,ancient-leshen,42,25,59.52
@@ -2167,7 +2171,7 @@ Unmatched,Tomoe Gozen,tomoe-gozen,Buffy,buffy,1,1,100
 Unmatched,Tomoe Gozen,tomoe-gozen,Chupacabra,chupacabra,53,28,52.83
 Unmatched,Tomoe Gozen,tomoe-gozen,Cloak & Dagger,cloak-dagger,2,1,50
 Unmatched,Tomoe Gozen,tomoe-gozen,Dr. Sattler,dr-sattler,42,26,61.9
-Unmatched,Tomoe Gozen,tomoe-gozen,Eredin,eredin,58,18,31.03
+Unmatched,Tomoe Gozen,tomoe-gozen,Eredin,eredin,59,18,30.51
 Unmatched,Tomoe Gozen,tomoe-gozen,George Washington,george-washington,12,6,50
 Unmatched,Tomoe Gozen,tomoe-gozen,Ghost Rider,ghost-rider,13,11,84.62
 Unmatched,Tomoe Gozen,tomoe-gozen,InGen,ingen,51,29,56.86
@@ -2197,18 +2201,18 @@ Unmatched,Winter Soldier,winter-soldier,Buffy,buffy,3,1,33.33
 Unmatched,Winter Soldier,winter-soldier,Bullseye,bullseye,60,31,51.67
 Unmatched,Winter Soldier,winter-soldier,Chupacabra,chupacabra,8,1,12.5
 Unmatched,Winter Soldier,winter-soldier,Cloak & Dagger,cloak-dagger,15,7,46.67
-Unmatched,Winter Soldier,winter-soldier,Daredevil,daredevil,57,26,45.61
+Unmatched,Winter Soldier,winter-soldier,Daredevil,daredevil,58,27,46.55
 Unmatched,Winter Soldier,winter-soldier,Deadpool,deadpool,4,3,75
 Unmatched,Winter Soldier,winter-soldier,Donatello,donatello,2,0,0
 Unmatched,Winter Soldier,winter-soldier,Dr. Jill Trent,dr-jill-trent,9,5,55.56
 Unmatched,Winter Soldier,winter-soldier,Dr. Sattler,dr-sattler,5,3,60
 Unmatched,Winter Soldier,winter-soldier,Dracula,dracula,23,10,43.48
-Unmatched,Winter Soldier,winter-soldier,Elektra,elektra,21,10,47.62
+Unmatched,Winter Soldier,winter-soldier,Elektra,elektra,22,10,45.45
 Unmatched,Winter Soldier,winter-soldier,Eredin,eredin,3,1,33.33
 Unmatched,Winter Soldier,winter-soldier,George Washington,george-washington,5,4,80
 Unmatched,Winter Soldier,winter-soldier,Geralt of Rivia,geralt-of-rivia,8,0,0
 Unmatched,Winter Soldier,winter-soldier,Ghost Rider,ghost-rider,14,7,50
-Unmatched,Winter Soldier,winter-soldier,Golden Bat,golden-bat,37,22,59.46
+Unmatched,Winter Soldier,winter-soldier,Golden Bat,golden-bat,38,23,60.53
 Unmatched,Winter Soldier,winter-soldier,Hamlet,hamlet,4,2,50
 Unmatched,Winter Soldier,winter-soldier,Houdini,houdini,59,4,6.78
 Unmatched,Winter Soldier,winter-soldier,InGen,ingen,22,15,68.18
@@ -2216,7 +2220,7 @@ Unmatched,Winter Soldier,winter-soldier,Jekyll & Hyde,jekyll-hyde,5,1,20
 Unmatched,Winter Soldier,winter-soldier,John Henry,john-henry,19,4,21.05
 Unmatched,Winter Soldier,winter-soldier,Leonardo,leonardo,7,2,28.57
 Unmatched,Winter Soldier,winter-soldier,Loki,loki,1,0,0
-Unmatched,Winter Soldier,winter-soldier,Luke Cage,luke-cage,41,6,14.63
+Unmatched,Winter Soldier,winter-soldier,Luke Cage,luke-cage,42,7,16.67
 Unmatched,Winter Soldier,winter-soldier,Medusa,medusa,96,53,55.21
 Unmatched,Winter Soldier,winter-soldier,Moon Knight,moon-knight,57,12,21.05
 Unmatched,Winter Soldier,winter-soldier,Ms. Marvel,ms-marvel,8,3,37.5
@@ -2240,14 +2244,14 @@ Unmatched,Winter Soldier,winter-soldier,Yennenga,yennenga,121,53,43.8
 Unmatched,Wyatt Earp,wyatt-earp,Alice,alice,30,15,50
 Unmatched,Wyatt Earp,wyatt-earp,Bloody Mary,bloody-mary,5,1,20
 Unmatched,Wyatt Earp,wyatt-earp,Dr. Sattler,dr-sattler,4,1,25
-Unmatched,Wyatt Earp,wyatt-earp,George Washington,george-washington,48,31,64.58
+Unmatched,Wyatt Earp,wyatt-earp,George Washington,george-washington,49,32,65.31
 Unmatched,Wyatt Earp,wyatt-earp,Ghost Rider,ghost-rider,8,5,62.5
 Unmatched,Wyatt Earp,wyatt-earp,Invisible Man,invisible-man,9,7,77.78
 Unmatched,Wyatt Earp,wyatt-earp,Loki,loki,36,19,52.78
 Unmatched,Wyatt Earp,wyatt-earp,Medusa,medusa,38,18,47.37
 Unmatched,Wyatt Earp,wyatt-earp,Michelangelo,michelangelo,6,1,16.67
 Unmatched,Wyatt Earp,wyatt-earp,Ms. Marvel,ms-marvel,13,8,61.54
-Unmatched,Wyatt Earp,wyatt-earp,Rosie the Riveter,rosie-the-riveter,76,37,48.68
+Unmatched,Wyatt Earp,wyatt-earp,Rosie the Riveter,rosie-the-riveter,77,37,48.05
 Unmatched,Yennefer & Triss,yennefer-triss,Alice,alice,4,3,75
 Unmatched,Yennefer & Triss,yennefer-triss,Ancient Leshen,ancient-leshen,65,38,58.46
 Unmatched,Yennefer & Triss,yennefer-triss,Annie Christmas,annie-christmas,6,4,66.67
@@ -2255,16 +2259,16 @@ Unmatched,Yennefer & Triss,yennefer-triss,Beowulf,beowulf,2,2,100
 Unmatched,Yennefer & Triss,yennefer-triss,Black Panther,black-panther,9,7,77.78
 Unmatched,Yennefer & Triss,yennefer-triss,Bloody Mary,bloody-mary,5,5,100
 Unmatched,Yennefer & Triss,yennefer-triss,Buffy,buffy,3,2,66.67
-Unmatched,Yennefer & Triss,yennefer-triss,Bullseye,bullseye,32,18,56.25
+Unmatched,Yennefer & Triss,yennefer-triss,Bullseye,bullseye,34,20,58.82
 Unmatched,Yennefer & Triss,yennefer-triss,Chupacabra,chupacabra,48,20,41.67
 Unmatched,Yennefer & Triss,yennefer-triss,Cloak & Dagger,cloak-dagger,4,1,25
 Unmatched,Yennefer & Triss,yennefer-triss,Dr. Sattler,dr-sattler,2,0,0
 Unmatched,Yennefer & Triss,yennefer-triss,Dracula,dracula,17,8,47.06
-Unmatched,Yennefer & Triss,yennefer-triss,Eredin,eredin,131,75,57.25
+Unmatched,Yennefer & Triss,yennefer-triss,Eredin,eredin,134,77,57.46
 Unmatched,Yennefer & Triss,yennefer-triss,George Washington,george-washington,14,9,64.29
 Unmatched,Yennefer & Triss,yennefer-triss,Ghost Rider,ghost-rider,7,4,57.14
 Unmatched,Yennefer & Triss,yennefer-triss,Hamlet,hamlet,3,2,66.67
-Unmatched,Yennefer & Triss,yennefer-triss,InGen,ingen,11,10,90.91
+Unmatched,Yennefer & Triss,yennefer-triss,InGen,ingen,12,11,91.67
 Unmatched,Yennefer & Triss,yennefer-triss,Invisible Man,invisible-man,5,3,60
 Unmatched,Yennefer & Triss,yennefer-triss,Krang,krang,3,3,100
 Unmatched,Yennefer & Triss,yennefer-triss,Leonardo,leonardo,5,4,80
@@ -2275,13 +2279,13 @@ Unmatched,Yennefer & Triss,yennefer-triss,Moon Knight,moon-knight,36,27,75
 Unmatched,Yennefer & Triss,yennefer-triss,Robin Hood,robin-hood,10,5,50
 Unmatched,Yennefer & Triss,yennefer-triss,Rosie the Riveter,rosie-the-riveter,10,2,20
 Unmatched,Yennefer & Triss,yennefer-triss,Sherlock Holmes,sherlock-holmes,30,11,36.67
-Unmatched,Yennefer & Triss,yennefer-triss,Sun Wukong,sun-wukong,57,29,50.88
+Unmatched,Yennefer & Triss,yennefer-triss,Sun Wukong,sun-wukong,58,29,50
 Unmatched,Yennefer & Triss,yennefer-triss,The Genie,the-genie,67,38,56.72
 Unmatched,Yennefer & Triss,yennefer-triss,Titania,titania,12,8,66.67
 Unmatched,Yennefer & Triss,yennefer-triss,Tomoe Gozen,tomoe-gozen,70,43,61.43
-Unmatched,Yennefer & Triss,yennefer-triss,Wyatt Earp,wyatt-earp,59,20,33.9
+Unmatched,Yennefer & Triss,yennefer-triss,Wyatt Earp,wyatt-earp,61,20,32.79
 Unmatched,Yennefer & Triss,yennefer-triss,Yennenga,yennenga,45,34,75.56
-Unmatched,Yennenga,yennenga,Alice,alice,45,29,64.44
+Unmatched,Yennenga,yennenga,Alice,alice,46,30,65.22
 Unmatched,Yennenga,yennenga,Ancient Leshen,ancient-leshen,22,19,86.36
 Unmatched,Yennenga,yennenga,Annie Christmas,annie-christmas,28,20,71.43
 Unmatched,Yennenga,yennenga,Bloody Mary,bloody-mary,97,45,46.39

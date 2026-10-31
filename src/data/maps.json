@@ -158,5 +158,15 @@
     "id": "sarpedon",
     "name": "Sarpedon",
     "file": "sarpedon.jpg"
+  },
+  {
+    "id": "pandemonium",
+    "name": "Pandemonium",
+    "file": "pandemonium.jpg"
+  },
+  {
+    "id": "bprd-headquarters",
+    "name": "B.P.R.D Headquarters",
+    "file": "bprd-headquarters.jpg"
   }
 ]
