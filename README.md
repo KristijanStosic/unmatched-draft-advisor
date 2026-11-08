@@ -41,3 +41,12 @@ Roster, Draft Simulator sa pre-banovima, preporukama i WR, generator mapa, Overa
 
 Undo i Reset Draft ostaju dostupni. Preporuke koriste postojeće formule i postojeće Overall WR fallback ponašanje.
 
+
+
+## Matchup ratings (final project update)
+
+Small colour-and-text badges appear in Hero vs Hero, Hero vs Available Pool (selected hero WR only), simulator matchup details, and opponent details in Statistics. The Close matchups view has one Balanced range header; low-sample results remain Unknown. A collapsed legend in Matchup Explorer explains every category. Aggregate WR and roster cards are unchanged.
+
+Ratings use unrounded WR: Counter >75%; Favoured >60–75%; Slightly Favoured >55–60%; Balanced 45–55%; Slightly Losing 40–<45%; Losing 25–<40%; Nightmare <25%. Missing data or fewer than 4 games produces Unknown. Recorded WR and Games remain visible for small samples; missing data remains N/A. These are descriptive result bands, not guarantees.
+
+Validation: 26/26 tests pass; production build passes; ESLint passes for all changed/new files. Browser visual verification was unavailable because the embedded browser could not reach the local app.

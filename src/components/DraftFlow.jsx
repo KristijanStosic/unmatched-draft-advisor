@@ -1,3 +1,4 @@
+import MatchupRating from '@/components/MatchupRating';
 import { useEffect, useMemo, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -42,7 +43,7 @@ function MatchupInfo({ hero, opponents, index, names }) {
       </button>
       {open && (
         <div
-          className="absolute right-0 top-full z-50 mt-1 w-64 max-h-64 overflow-y-auto rounded-lg border border-amber-800 bg-zinc-950 p-3 text-left shadow-2xl"
+          className="absolute right-0 top-full z-50 mt-1 w-80 max-w-[85vw] max-h-64 overflow-y-auto rounded-lg border border-amber-800 bg-zinc-950 p-3 text-left shadow-2xl"
           onClick={(e) => e.stopPropagation()}
         >
           <div className="mb-2 text-xs font-bold text-amber-300">
@@ -55,9 +56,10 @@ function MatchupInfo({ hero, opponents, index, names }) {
                 className="flex justify-between gap-2 border-b border-zinc-800 py-1 text-xs"
               >
                 <span className="truncate">{names.get(slug) ?? slug}</span>
-                <span className="shrink-0">
+                <span className="flex max-w-[65%] flex-wrap items-center justify-end gap-1 text-right">
                   {pct(data?.rate)}{" "}
                   <span className="text-zinc-500">({data?.games ?? 0})</span>
+                  <MatchupRating rate={data?.rate} games={data?.games} />
                 </span>
               </div>
             ))
@@ -482,7 +484,8 @@ export default function DraftFlow({
                       {names.get(d.a)} vs {names.get(d.b)}
                     </span>
                     <span>
-                      {pct(d.data?.rate)} ({d.data?.games ?? 0} games)
+                      {pct(d.data?.rate)} ({d.data?.games ?? 0} games){" "}
+                      <MatchupRating rate={d.data?.rate} games={d.data?.games} />
                     </span>
                   </div>
                 ))}

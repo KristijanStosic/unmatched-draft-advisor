@@ -1,3 +1,4 @@
+import MatchupRating from '@/components/MatchupRating';
 import { useState } from "react";
 import {
   Dialog,
@@ -116,7 +117,8 @@ export default function StatisticsDialog({
                   >
                     <span>{d.name}</span>
                     <span>
-                      {fmt(d.winRate)} · {d.games} games
+                      {fmt(d.winRate)} · {d.games} games{" "}
+                      <MatchupRating rate={d.winRate} games={d.games} />
                     </span>
                   </div>
                 ))}

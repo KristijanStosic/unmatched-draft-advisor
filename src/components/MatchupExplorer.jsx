@@ -1,3 +1,4 @@
+import MatchupRating, { MatchupLegend } from '@/components/MatchupRating';
 import { useMemo, useState } from "react";
 import {
   Dialog,
@@ -111,6 +112,7 @@ export default function MatchupExplorer({ open, onOpenChange, heroes, index, ava
                       <p className="text-2xl font-bold text-amber-300">
                         {pct(rate)}
                       </p>
+                      <MatchupRating rate={rate} games={data?.games} />
                     </div>
                   ))}
                 </div>
@@ -119,11 +121,6 @@ export default function MatchupExplorer({ open, onOpenChange, heroes, index, ava
                     ? `${data.games} games · ${a.name}: ${data.wins} wins · ${b.name}: ${data.games - data.wins} wins`
                     : "N/A · 0 games — no recorded matchup data."}
                 </p>
-                {data && data.rate >= 45 && data.rate <= 55 && (
-                  <p className="text-center text-sm text-emerald-300">
-                    Close matchup · 45–55%
-                  </p>
-                )}
               </div>
             ) : (
               <p className="text-sm text-zinc-400">
@@ -164,7 +161,12 @@ export default function MatchupExplorer({ open, onOpenChange, heroes, index, ava
                       {poolRows.map((row) => (
                         <tr key={row.opponent.slug} className="border-b border-zinc-800">
                           <td className="p-2">{row.opponent.name}</td>
-                          <td className="p-2 text-right text-amber-300">{pct(row.rate)}</td>
+                          <td className="p-2 text-right">
+                            <div className="flex flex-wrap items-center justify-end gap-1.5">
+                              <span className="text-amber-300">{pct(row.rate)}</span>
+                              <MatchupRating rate={row.rate} games={row.games} />
+                            </div>
+                          </td>
                           <td className="p-2 text-right text-amber-300">{pct(row.oppositeRate)}</td>
                           <td className="p-2 text-right">{row.games ?? "N/A"}</td>
                         </tr>
@@ -179,9 +181,10 @@ export default function MatchupExplorer({ open, onOpenChange, heroes, index, ava
         ) : (
           <div className="space-y-4">
             <p className="text-sm text-zinc-400">
+              <span className="mr-2 inline-flex rounded border border-slate-600 bg-slate-800 px-1.5 py-0.5 text-xs text-slate-200">Balanced range</span>
               Both heroes have a WR between 45% and 55%, inclusive. Sorted
               closest to 50–50 first, then by games played. Missing data is
-              excluded.
+              excluded. Results with fewer than 4 games remain Unknown; see the legend.
             </p>
             <div className="grid gap-3 sm:grid-cols-3">
               <label className="space-y-1 text-sm">
@@ -281,6 +284,7 @@ export default function MatchupExplorer({ open, onOpenChange, heroes, index, ava
             )}
           </div>
         )}
+        <MatchupLegend />
         <p className="text-xs text-zinc-500">
           {mode === "pool"
             ? "Uses the current roster pool without banned opponents."
