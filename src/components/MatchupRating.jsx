@@ -24,7 +24,7 @@ export default function MatchupRating({ rate, games }) {
 
 export function MatchupLegend() {
   return (
-    <details className="rounded border border-zinc-700 p-2 text-xs text-zinc-400">
+    <details open className="rounded border border-zinc-700 p-2 text-xs text-zinc-400">
       <summary className="cursor-pointer">Matchup ratings · legend</summary>
       <p className="mt-2">
         Ratings use the selected hero’s WR, before rounding. Counter means this
