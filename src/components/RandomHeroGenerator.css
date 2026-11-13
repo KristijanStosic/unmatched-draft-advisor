@@ -13,6 +13,7 @@
   border: 3px solid #d6a952;
   border-radius: 50%;
   box-shadow: 0 0 0 5px #27272a;
+  transform: rotate(var(--spin-angle, 0deg));
 }
 
 .hero-wheel-spinning {
@@ -63,4 +64,8 @@
   border: 2px solid #d6a952;
   border-radius: 50%;
   background: #18181b;
+}
+
+.hero-tier-catalog > button {
+  transition: none;
 }

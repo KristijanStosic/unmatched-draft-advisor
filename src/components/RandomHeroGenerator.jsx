@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { memo, useCallback, useDeferredValue, useEffect, useMemo, useRef, useState } from "react";
 import HeroCard from "@/components/HeroCard";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -6,10 +6,13 @@ import { drawHeroIndex, loadHeroTiers, remainingHeroes, saveHeroTiers, wheelRota
 import "./RandomHeroGenerator.css";
 
 const WHEEL_MS = 5800;
+const SAVE_DELAY_MS = 180;
+const EMPTY_POOL = [];
+const TierHeroCard = memo(HeroCard);
 const ROULETTE_DELAYS = [50, 55, 60, 65, 70, 80, 90, 105, 125, 150, 180, 220, 270, 340, 420]
   .map((ms) => ms * 1.5);
 
-function HeroWheel({ pool, draw }) {
+const HeroWheel = memo(function HeroWheel({ pool, draw, onFinish }) {
   const step = 360 / pool.length;
   const gradient = pool.map((_, index) =>
     `hsl(${(index * 137.508) % 360} 65% ${index % 2 ? 28 : 37}%) ${index * step}deg ${(index + 1) * step}deg`,
@@ -20,10 +23,11 @@ function HeroWheel({ pool, draw }) {
       <div className="hero-wheel-pointer" />
       <div
         key={draw?.id}
-        className={draw ? "hero-wheel-disc hero-wheel-spinning" : "hero-wheel-disc"}
+        className={draw?.animate ? "hero-wheel-disc hero-wheel-spinning" : "hero-wheel-disc"}
+        onAnimationEnd={draw?.active ? onFinish : undefined}
         style={{
           background: `conic-gradient(${gradient})`,
-          "--spin-angle": `${draw ? wheelRotation(pool.length, draw.winnerIndex) : 0}deg`,
+          "--spin-angle": `${draw?.rotation ?? 0}deg`,
           "--spin-time": `${WHEEL_MS}ms`,
           "--label-size": `clamp(4px, ${Math.min(3, 100 / pool.length)}cqw, 14px)`,
         }}
@@ -37,7 +41,7 @@ function HeroWheel({ pool, draw }) {
       </div>
     </div>
   );
-}
+});
 
 function HeroPortrait({ hero, className = "" }) {
   return (
@@ -59,28 +63,54 @@ export default function RandomHeroGenerator({ heroes, isLoading }) {
   const [storageError, setStorageError] = useState(false);
   const timer = useRef(null);
   const drawing = useRef(false);
+  const latestTiers = useRef(tiers);
+  const saveTimer = useRef(null);
 
-  useEffect(() => () => clearTimeout(timer.current), []);
+  const flushSave = useCallback(() => {
+    if (saveTimer.current === null) return true;
+    clearTimeout(saveTimer.current);
+    saveTimer.current = null;
+    return saveHeroTiers(latestTiers.current);
+  }, []);
+
+  useEffect(() => {
+    window.addEventListener("pagehide", flushSave);
+    return () => {
+      window.removeEventListener("pagehide", flushSave);
+      clearTimeout(timer.current);
+      flushSave();
+    };
+  }, [flushSave]);
 
   const tier = tiers.find(({ id }) => id === selectedId) ?? tiers[0];
-  const pool = tier ? remainingHeroes(tier, heroes) : [];
-  const members = new Set(tier?.members);
-  const bySlug = new Map(heroes.map((hero) => [hero.slug, hero]));
+  const tierId = tier?.id;
+  const pool = useMemo(() => tier ? remainingHeroes(tier, heroes) : EMPTY_POOL, [tier, heroes]);
+  const deferredPool = useDeferredValue(pool);
+  const members = useMemo(() => new Set(tier?.members), [tier?.members]);
+  const bySlug = useMemo(() => new Map(heroes.map((hero) => [hero.slug, hero])), [heroes]);
   const history = draw?.active ? tier.history.slice(0, -1) : tier?.history ?? [];
   const winner = bySlug.get(history.at(-1));
-  const wheelPool = draw?.pool ?? pool;
+  const wheelPool = draw?.pool ?? deferredPool;
   const busy = Boolean(draw?.active);
-  const catalog = heroes.filter((hero) =>
-    hero.name.toLowerCase().includes(search.trim().toLowerCase()),
-  );
+  const catalog = useMemo(() => {
+    const query = search.trim().toLowerCase();
+    return heroes.filter((hero) => hero.name.toLowerCase().includes(query));
+  }, [heroes, search]);
 
-  function updateTiers(next) {
+  const updateTiers = useCallback((next, deferSave = false) => {
+    latestTiers.current = next;
     setTiers(next);
-    setStorageError(!saveHeroTiers(next));
-  }
+    clearTimeout(saveTimer.current);
+    if (deferSave) {
+      saveTimer.current = setTimeout(() => setStorageError(!flushSave()), SAVE_DELAY_MS);
+    } else {
+      saveTimer.current = null;
+      setStorageError(!saveHeroTiers(next));
+    }
+  }, [flushSave]);
 
   function editTier(changes) {
-    updateTiers(tiers.map((item) => item.id === tier.id ? { ...item, ...changes } : item));
+    updateTiers(latestTiers.current.map((item) => item.id === tierId ? { ...item, ...changes } : item));
   }
 
   function addTier(event) {
@@ -88,20 +118,29 @@ export default function RandomHeroGenerator({ heroes, isLoading }) {
     const name = newName.trim();
     if (!name) return;
     const id = crypto.randomUUID();
-    updateTiers([...tiers, { id, name, members: [], history: [] }]);
+    updateTiers([...latestTiers.current, { id, name, members: [], history: [] }]);
     setSelectedId(id);
     setNewName("");
     setDraw(null);
   }
 
-  function toggleHero(slug) {
+  const toggleHero = useCallback((slug) => {
+    if (drawing.current) return;
     setDraw(null);
-    editTier({
-      members: members.has(slug)
-        ? tier.members.filter((member) => member !== slug)
-        : [...tier.members, slug],
-    });
-  }
+    updateTiers(latestTiers.current.map((item) => {
+      if (item.id !== tierId) return item;
+      const members = item.members.includes(slug)
+        ? item.members.filter((member) => member !== slug)
+        : [...item.members, slug];
+      return { ...item, members };
+    }), true);
+  }, [tierId, updateTiers]);
+
+  const finishDraw = useCallback(() => {
+    drawing.current = false;
+    setDraw((current) => current?.active ? { ...current, active: false } : current);
+    setPreview(null);
+  }, []);
 
   function startDraw() {
     if (drawing.current || !pool.length) return;
@@ -109,29 +148,26 @@ export default function RandomHeroGenerator({ heroes, isLoading }) {
     const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     editTier({ history: [...tier.history, pool[winnerIndex].slug] });
 
-    if (reducedMotion) {
-      setDraw(null);
-      return;
-    }
-
-    drawing.current = true;
-    setDraw({ id: crypto.randomUUID(), pool, winnerIndex, active: true });
-    function finish() {
-      drawing.current = false;
-      setDraw((current) => ({ ...current, active: false }));
-      setPreview(null);
-    }
-
+    drawing.current = !reducedMotion;
     if (mode === "wheel") {
-      timer.current = setTimeout(finish, WHEEL_MS);
+      setDraw({
+        id: crypto.randomUUID(),
+        pool,
+        rotation: wheelRotation(pool.length, winnerIndex),
+        animate: !reducedMotion,
+        active: !reducedMotion,
+      });
       return;
     }
+
+    setDraw(reducedMotion ? null : { active: true });
+    if (reducedMotion) return;
 
     let frame = 0;
     let index = pool.length > 1 ? (winnerIndex + 1) % pool.length : winnerIndex;
     function tick() {
       if (frame === ROULETTE_DELAYS.length) {
-        finish();
+        finishDraw();
         return;
       }
       setPreview(pool[index]);
@@ -180,8 +216,8 @@ export default function RandomHeroGenerator({ heroes, isLoading }) {
       {tier && (
         <>
           <div className="grid gap-5 lg:grid-cols-[minmax(0,2fr)_minmax(0,1fr)]">
-            <section aria-label="Hero draw" className="space-y-5 rounded-xl border border-zinc-800 bg-zinc-900 p-4 sm:p-6">
-              <div className="flex flex-wrap items-center justify-between gap-3">
+            <section aria-label="Hero draw" className="flex flex-col gap-5 rounded-xl border border-zinc-800 bg-zinc-900 p-4 sm:p-6">
+              <div className="order-first flex flex-wrap items-center justify-between gap-3">
                 <div role="group" aria-label="Generator mode" className="flex flex-wrap gap-2">
                   {[["wheel", "Spin the Wheel"], ["roulette", "Hero Roulette"]].map(([value, label]) => (
                     <Button className="hover:cursor-pointer" key={value} disabled={busy} aria-pressed={mode === value}
@@ -196,8 +232,8 @@ export default function RandomHeroGenerator({ heroes, isLoading }) {
                 <p className="text-sm text-zinc-300">{busy ? pool.length + 1 : pool.length} / {members.size} remaining</p>
               </div>
 
-              <div className="grid items-center gap-5 sm:grid-cols-2">
-                {mode === "wheel" && wheelPool.length > 0 && <HeroWheel pool={wheelPool} draw={draw} />}
+              <div className="order-1 grid items-center gap-5 sm:order-none sm:grid-cols-2">
+                {mode === "wheel" && wheelPool.length > 0 && <HeroWheel pool={wheelPool} draw={draw} onFinish={finishDraw} />}
                 {busy && mode === "roulette" && preview && <HeroPortrait hero={preview} className="sm:col-span-2" />}
                 {winner && !busy && (
                   <div aria-live="polite" className={mode === "roulette" || !wheelPool.length ? "sm:col-span-2" : ""}>
@@ -208,7 +244,7 @@ export default function RandomHeroGenerator({ heroes, isLoading }) {
 
               <div className="flex flex-wrap gap-2">
                 <Button
-                  className="cursor-pointer bg-amber-500 text-zinc-950 hover:bg-amber-400"
+                  className="h-11 flex-1 cursor-pointer bg-amber-500 text-zinc-950 hover:bg-amber-400 sm:h-8 sm:flex-none"
                   disabled={busy || !pool.length}
                   onClick={startDraw}
                 >
@@ -216,7 +252,7 @@ export default function RandomHeroGenerator({ heroes, isLoading }) {
                 </Button>
 
                 <Button
-                  className="cursor-pointer bg-red-800 text-white hover:bg-red-600"
+                  className="h-11 cursor-pointer bg-red-800 text-white hover:bg-red-600 sm:h-8"
                   disabled={busy || !tier.history.length}
                   onClick={() => {
                     setDraw(null);
@@ -227,7 +263,7 @@ export default function RandomHeroGenerator({ heroes, isLoading }) {
                 </Button>
               </div>
               {!busy && !pool.length && (
-                <p className="text-sm text-zinc-400">
+                <p className="order-2 text-sm text-zinc-400">
                   {isLoading ? "Loading heroes…" : !heroes.length ? "The hero catalog is unavailable." :
                     !members.size ? "Add heroes below to start drawing." :
                       "No eligible heroes remain. Reset the draw or add heroes to this tier."}
@@ -249,9 +285,9 @@ export default function RandomHeroGenerator({ heroes, isLoading }) {
               <Input aria-label="Find a hero" placeholder="Find a hero…" value={search}
                 onChange={(event) => setSearch(event.target.value)} className="max-w-60" />
             </div>
-            <div className="grid max-h-96 grid-cols-[repeat(auto-fill,minmax(88px,1fr))] gap-2 overflow-auto p-1">
+            <div className="hero-tier-catalog grid max-h-96 grid-cols-[repeat(auto-fill,minmax(88px,1fr))] gap-2 overflow-auto p-1">
               {catalog.map((hero) => (
-                <HeroCard key={hero.slug} hero={hero} isSelected={members.has(hero.slug)} onToggle={toggleHero} />
+                <TierHeroCard key={hero.slug} hero={hero} isSelected={members.has(hero.slug)} onToggle={toggleHero} />
               ))}
             </div>
             {!catalog.length && !isLoading && <p className="text-sm text-zinc-400">No heroes found.</p>}

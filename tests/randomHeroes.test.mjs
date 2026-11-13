@@ -21,11 +21,16 @@ test("draw rejects the biased tail and can select every eligible index", () => {
   assert.equal(drawHeroIndex(1), 0);
 });
 
-test("the wheel stops with the chosen sector centered under the pointer", () => {
+test("the pointer lands inside the chosen sector, including near either edge", () => {
   for (const size of [1, 2, 7, 80]) {
     for (let index = 0; index < size; index += 1) {
-      const center = (index + 0.5) * (360 / size);
-      assert.ok(Math.abs(wheelRotation(size, index) + center - 2160) < 1e-9);
+      const step = 360 / size;
+      const landing = (sample) => (2160 - wheelRotation(size, index, () => sample)) / step;
+      const early = landing(0);
+      const late = landing(0.999999);
+      assert.ok(early > index && early < index + 0.03);
+      assert.ok(late > index + 0.97 && late < index + 1);
+      assert.equal(Math.floor(landing(0.4)), index);
     }
   }
 });

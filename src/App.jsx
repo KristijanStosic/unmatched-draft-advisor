@@ -1,9 +1,9 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
-import { Swords, Search, BarChart3, CheckCheck } from "lucide-react";
+import { Swords, Search, BarChart3, CheckCheck, Menu, X } from "lucide-react";
 import RandomMapGenerator from "@/components/RandomMapGenerator";
 import RandomHeroGenerator from "@/components/RandomHeroGenerator";
 import HeroCard from "@/components/HeroCard";
@@ -24,6 +24,8 @@ export default function App() {
   const [overall, setOverall] = useState(new Map());
   const [roster, setRoster] = useState(loadRoster);
   const [screen, setScreen] = useState("roster");
+  const [navigationOpen, setNavigationOpen] = useState(false);
+  const navigationToggle = useRef(null);
   const [search, setSearch] = useState("");
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState("");
@@ -118,10 +120,22 @@ export default function App() {
     setStatsOpen(true);
   }
 
+  function selectScreen(nextScreen) {
+    setScreen(nextScreen);
+    if (nextScreen !== "hero-generator") setSearch("");
+    if (navigationOpen) navigationToggle.current?.focus();
+    setNavigationOpen(false);
+  }
+
   return (
     <div className="min-h-screen bg-zinc-950 text-zinc-100">
-      <header className="sticky top-0 z-20 border-b border-amber-900/50 bg-zinc-950/95 backdrop-blur">
-        <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4 px-4 py-4">
+      <header className="sticky top-0 z-20 border-b border-amber-900/50 bg-zinc-950/95 backdrop-blur"
+        onKeyDown={(event) => {
+          if (event.key !== "Escape" || !navigationOpen) return;
+          setNavigationOpen(false);
+          navigationToggle.current?.focus();
+        }}>
+        <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3 px-4 py-2 md:gap-4 md:py-4">
           <div className="flex items-center gap-3">
             <Swords className="h-8 w-8 text-red-500" />
             <div>
@@ -129,16 +143,26 @@ export default function App() {
               <p className="text-xs text-zinc-400">Draft Assistant</p>
             </div>
           </div>
-          <div className="flex w-full flex-wrap items-start gap-4">
+          <Button
+            ref={navigationToggle}
+            type="button"
+            variant="outline"
+            className="h-11 w-11 md:hidden"
+            aria-label={navigationOpen ? "Close menu" : "Open menu"}
+            aria-expanded={navigationOpen}
+            aria-controls="header-navigation"
+            onClick={() => setNavigationOpen((open) => !open)}
+          >
+            {navigationOpen ? <X aria-hidden="true" /> : <Menu aria-hidden="true" />}
+          </Button>
+          <div id="header-navigation"
+            className={`${navigationOpen ? "flex" : "hidden"} max-h-[calc(100dvh-4rem)] w-full flex-col gap-4 overflow-y-auto md:flex md:max-h-none md:flex-row md:flex-wrap md:items-start md:overflow-visible`}>
             <nav aria-label="Navigation" className="space-y-2">
               <div className="flex flex-wrap gap-2">
                 <Button
                   className="hover:cursor-pointer"
                   variant={screen === "roster" ? "default" : "outline"}
-                  onClick={() => {
-                    setScreen("roster");
-                    setSearch("");
-                  }}
+                  onClick={() => selectScreen("roster")}
                 >
                   Roster
                 </Button>
@@ -146,27 +170,21 @@ export default function App() {
                   className="hover:cursor-pointer"
                   variant={screen === "simulator" ? "default" : "outline"}
                   disabled={validRoster.length < 12}
-                  onClick={() => {
-                    setScreen("simulator");
-                    setSearch("");
-                  }}
+                  onClick={() => selectScreen("simulator")}
                 >
                   Draft Simulator
                 </Button>
                 <Button
                   className="hover:cursor-pointer"
                   variant={screen === "maps" ? "default" : "outline"}
-                  onClick={() => {
-                    setScreen("maps");
-                    setSearch("");
-                  }}
+                  onClick={() => selectScreen("maps")}
                 >
                   Random Map Generator
                 </Button>
                 <Button
                   className="hover:cursor-pointer"
                   variant={screen === "hero-generator" ? "default" : "outline"}
-                  onClick={() => setScreen("hero-generator")}
+                  onClick={() => selectScreen("hero-generator")}
                 >
                   Random Hero Generator
                 </Button>
@@ -177,7 +195,10 @@ export default function App() {
                 <Button
                   className="cursor-pointer"
                   variant="outline"
-                  onClick={() => showStats("overall")}
+                  onClick={() => {
+                    setNavigationOpen(false);
+                    showStats("overall");
+                  }}
                 >
                   <BarChart3 className="mr-2 h-4 w-4" />
                   Overall Statistics
@@ -185,7 +206,10 @@ export default function App() {
                 <Button
                   className="hover:cursor-pointer"
                   variant="outline"
-                  onClick={() => setMatchupsOpen(true)}
+                  onClick={() => {
+                    setNavigationOpen(false);
+                    setMatchupsOpen(true);
+                  }}
                 >
                   Matchup Explorer
                 </Button>

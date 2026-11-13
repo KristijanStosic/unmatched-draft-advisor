@@ -42,6 +42,8 @@ export function drawHeroIndex(size, random = globalThis.crypto) {
   return sample[0] % size;
 }
 
-export function wheelRotation(size, winnerIndex) {
-  return 6 * 360 - (winnerIndex + 0.5) * (360 / size);
+export function wheelRotation(size, winnerIndex, random = Math.random) {
+  // Leave a small margin on each side so rounding cannot land on a divider.
+  const position = 0.02 + random() * 0.96;
+  return 6 * 360 - (winnerIndex + position) * (360 / size);
 }

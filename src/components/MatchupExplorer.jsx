@@ -61,6 +61,7 @@ export default function MatchupExplorer({ open, onOpenChange, heroes, index, ava
             ["close", "Close matchups · 45–55%"],
           ].map(([value, title]) => (
             <Button
+              className="hover:cursor-pointer"
               key={value}
               variant={mode === value ? "default" : "outline"}
               onClick={() => setMode(value)}
