@@ -90,7 +90,7 @@ function BanProgress({ title, steps, names, instruction }) {
               {active && <span className="flex items-center gap-1 font-semibold text-amber-300"><ArrowRight className="size-3" aria-hidden="true" /> Current turn</span>}
             </div>
             <p className={`mt-1 font-semibold ${who === "me" ? "text-emerald-300" : "text-red-300"}`}>{label(who)} <span className="font-normal text-zinc-400">· {role}</span></p>
-            {recorded && <p className="mt-1 flex items-center gap-1 break-words text-xs text-zinc-200">
+            {recorded && <p className="mt-1 flex items-center gap-1 wrap-break-word text-xs text-zinc-200">
               <Check className="size-3 shrink-0 text-emerald-400" aria-hidden="true" /> {names.get(recorded.slug) ?? recorded.slug}
             </p>}
           </li>

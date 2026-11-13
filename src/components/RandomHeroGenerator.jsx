@@ -232,7 +232,7 @@ export default function RandomHeroGenerator({ heroes, isLoading }) {
                 <p className="text-sm text-zinc-300">{busy ? pool.length + 1 : pool.length} / {members.size} remaining</p>
               </div>
 
-              <div className="order-1 grid items-center gap-5 sm:order-none sm:grid-cols-2">
+              <div className="order-1 grid items-center gap-5 sm:order-0 sm:grid-cols-2">
                 {mode === "wheel" && wheelPool.length > 0 && <HeroWheel pool={wheelPool} draw={draw} onFinish={finishDraw} />}
                 {busy && mode === "roulette" && preview && <HeroPortrait hero={preview} className="sm:col-span-2" />}
                 {winner && !busy && (
