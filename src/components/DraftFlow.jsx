@@ -1,8 +1,11 @@
 import MatchupRating from '@/components/MatchupRating';
+import { matchupRating } from "@/lib/matchupRating";
 import { useEffect, useMemo, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { RotateCcw, Undo2, Info } from "lucide-react";
+import { RotateCcw, Undo2, Info, ArrowRight, Check } from "lucide-react";
+import DraftTournaments from "@/components/DraftTournaments";
+import { DRAFT_FORMATS, arsenalDraftState, draftFormat } from "@/lib/draftFormats";
 import {
   pickOrder,
   draftPhase,
@@ -74,6 +77,30 @@ function MatchupInfo({ hero, opponents, index, names }) {
   );
 }
 
+function BanProgress({ title, steps, names, instruction }) {
+  return (
+    <section aria-label={title} className="space-y-3 rounded-lg border border-zinc-800 bg-zinc-950/60 p-3">
+      <h3 className="text-sm font-semibold">{title}</h3>
+      <ol className="grid grid-cols-2 gap-2 sm:grid-cols-[repeat(auto-fit,minmax(130px,1fr))]">
+        {steps.map(({ who, role, phase, recorded, active }, index) => (
+          <li key={index} aria-current={active ? "step" : undefined}
+            className={`min-w-0 rounded-md border p-2.5 text-sm ${active ? "border-amber-400 bg-amber-950/50 ring-1 ring-amber-400/30" : recorded ? "border-emerald-900 bg-emerald-950/25" : "border-zinc-800 bg-zinc-900"}`}>
+            <div className="flex flex-wrap items-center justify-between gap-1 text-xs">
+              <span className="text-zinc-400">{index + 1}. {phase}</span>
+              {active && <span className="flex items-center gap-1 font-semibold text-amber-300"><ArrowRight className="size-3" aria-hidden="true" /> Current turn</span>}
+            </div>
+            <p className={`mt-1 font-semibold ${who === "me" ? "text-emerald-300" : "text-red-300"}`}>{label(who)} <span className="font-normal text-zinc-400">· {role}</span></p>
+            {recorded && <p className="mt-1 flex items-center gap-1 break-words text-xs text-zinc-200">
+              <Check className="size-3 shrink-0 text-emerald-400" aria-hidden="true" /> {names.get(recorded.slug) ?? recorded.slug}
+            </p>}
+          </li>
+        ))}
+      </ol>
+      {instruction && <p role="status" className="border-l-2 border-amber-400 pl-3 text-sm font-medium text-amber-200">{instruction}</p>}
+    </section>
+  );
+}
+
 export default function DraftFlow({
   heroes,
   available,
@@ -82,26 +109,40 @@ export default function DraftFlow({
   onBannedChange,
 }) {
   const [format, setFormat] = useState(4);
+  const [tournament, setTournament] = useState(null);
   const [manualBans, setManualBans] = useState([]);
   const [leader, setLeader] = useState("opponent");
   const [started, setStarted] = useState(false);
-  const [history, setHistory] = useState([]);
+  const [actions, setHistory] = useState([]);
   const [search, setSearch] = useState("");
+  const arsenal = format === "arsenal";
+  const barsenal = format === "barsenal";
+  const { name: formatName, size, preBans } = draftFormat(format);
+  const arsenalState = useMemo(
+    () => arsenal || barsenal ? arsenalDraftState(actions, size, barsenal ? available : undefined) : null,
+    [actions, arsenal, barsenal, available, size],
+  );
+  const history = arsenalState?.confirmed ?? actions;
+  const lastRestore = history.findLastIndex(({ phase }) => phase === "restore-mirrors");
+  const mirrorBans = history.slice(lastRestore + 1).filter(({ phase }) => phase === "conflict").map(({ slug }) => slug);
   useEffect(() => {
     onBannedChange([
       ...(format === 6 ? manualBans : []),
-      ...history.filter((step) => step.phase !== "pick").map((step) => step.slug),
+      ...history.filter(({ phase }) => ["pre", "cross", "self"].includes(phase)).map(({ slug }) => slug),
+      ...history.slice(lastRestore + 1).filter(({ phase }) => phase === "conflict").map(({ slug }) => slug),
     ]);
-  }, [format, manualBans, history, onBannedChange]);
+  }, [format, manualBans, history, lastRestore, onBannedChange]);
   useEffect(() => () => onBannedChange([]), [onBannedChange]);
   const names = useMemo(
     () => new Map(heroes.map((h) => [h.slug, h.name])),
     [heroes],
   );
   const order = pickOrder(format);
-  const finalSize = format === 6 ? 6 : format - 2;
+  const arquest = format === "arquest";
+  const finalSize = format === 6 ? 6 : size - 2;
+  const minimum = size * 2 + preBans * 2;
   const pre = history.filter((h) => h.phase === "pre");
-  const banned = format === 6 ? manualBans : pre.map((h) => h.slug);
+  const banned = format === 6 ? manualBans : [...pre.map(({ slug }) => slug), ...mirrorBans];
   const pool = available.filter((s) => !banned.includes(s));
   const rosterStats = analyzePool(heroes, pool, index);
   const picks = history.filter((h) => h.phase === "pick");
@@ -122,14 +163,23 @@ export default function DraftFlow({
   const myFinal = myAfterCross.filter((s) => s !== selfMine);
   const theirFinal = theirAfterCross.filter((s) => s !== selfTheirs);
   const phase = draftPhase(picks.length, cross.length, self.length, format, pre.length);
+  const arsenalPicking = phase === "arsenal" || phase === "barsenal";
+  const picking = phase === "pick" || arsenalPicking;
+  const cannotFillArsenal = arsenalPicking && remaining.length < size * 2 - picks.length;
   const steps = format === 6 ? [] : banSteps(leader);
   const activeBan = steps.find(
     (step) =>
       !history.some((h) => h.phase === step.phase && h.who === step.who),
   );
-  const phaseWho = phase === "pre" ? (pre.length % 2 === 0 ? leader : other(leader)) : phase === "pick" ? current : activeBan?.who;
+  const phaseWho = arsenalPicking ? arsenalState.who : phase === "pre" ? (pre.length % 2 === 0 ? leader : other(leader)) : picking ? current : activeBan?.who;
+  const pendingPicks = arsenalPicking ? arsenalState.pending : { me: [], opponent: [] };
+  const myVisiblePicks = [...mine, ...pendingPicks.me];
+  const theirVisiblePicks = [...theirs, ...pendingPicks.opponent];
+  const pickOpponents = phaseWho === "me" ? theirVisiblePicks : myVisiblePicks;
   const candidates =
-    phase === "pre" || phase === "pick"
+    arsenalPicking
+      ? remaining.filter((slug) => !pendingPicks[phaseWho].includes(slug))
+      : phase === "pre" || picking
       ? remaining
       : phase === "self"
         ? phaseWho === "me"
@@ -141,11 +191,11 @@ export default function DraftFlow({
             : myAfterCross
           : [];
   const rankings =
-    phase === "pick"
+    picking
       ? recommendPicks(
           index,
           candidates,
-          phaseWho === "me" ? theirs : mine,
+          pickOpponents,
           rosterStats,
           overall,
         )
@@ -180,7 +230,7 @@ export default function DraftFlow({
     candidates,
     rankings,
     search,
-    phaseWho === "me" || phase === "self" || phase === "cross",
+    phaseWho === "me" || arsenalPicking || phase === "self" || phase === "cross",
   );
   const final = evaluateTeams(index, myFinal, theirFinal);
   function action(slug) {
@@ -198,13 +248,24 @@ export default function DraftFlow({
     setManualBans([]);
     setSearch("");
   }
+  function applyFormat(next, nextTournament = null) {
+    if (started && !window.confirm("Apply this format and reset the current draft?")) return;
+    reset();
+    setFormat(next);
+    setTournament(nextTournament);
+  }
+  function startDraft() {
+    setStarted(true);
+    setSearch("");
+  }
   return (
     <div className="space-y-5">
+      <DraftTournaments format={format} tournament={tournament} onApply={applyFormat} />
       <div className="rounded-lg border border-amber-900/50 bg-zinc-900 p-4 space-y-3">
         <div className="flex flex-wrap items-center justify-between gap-3">
           <h2 className="text-xl font-bold">Draft Simulator</h2>
           <div className="flex gap-2">
-            <Button className="hover:cursor-pointer" variant="outline" disabled={!history.length && (started || !manualBans.length)} onClick={undo}>
+            <Button className="hover:cursor-pointer" variant="outline" disabled={!actions.length && (started || !manualBans.length)} onClick={undo}>
               <Undo2 className="mr-1 h-4 w-4" />
               Undo
             </Button>
@@ -214,26 +275,32 @@ export default function DraftFlow({
             </Button>
           </div>
         </div>
+        <p className="font-semibold">{tournament ? `${tournament.name} · ` : ""}{formatName}</p>
         {!started ? (
           <div className="space-y-3">
             <p className="text-sm text-zinc-400">
               {format === 6
                 ? "Manually ban any number of roster heroes below, then alternate single picks starting with the Leader. No post-draft bans."
-                : `Each player pre-bans 2 heroes, alternating from the Leader. Then ${format === 4 ? "1–2–2–2–1" : "1–2–2–2–2–1"} snake picks, Opponent Ban and Self Ban.`}
+                : arsenal || barsenal
+                  ? `Enter your picks first, then record your opponent’s picks. Shared picks are banned automatically after each round. Fill open slots until both players have ${size} fighters.`
+                  : arquest
+                    ? "Alternate three pre-bans per player, then pick in LFFLLFFLLF order. Record Opponent Bans and Self Bans after the picks."
+                    : `Each player pre-bans 2 heroes, alternating from the Leader. Then ${format === 4 ? "1–2–2–2–1" : "1–2–2–2–2–1"} snake picks, Opponent Ban and Self Ban.`}
             </p>
             <div className="flex flex-wrap gap-2" aria-label="Draft format">
-              {[4, 5, 6].map((n) => (
-                <Button className="hover:cursor-pointer" key={n} variant={format === n ? "outline" : "default"}
-                  onClick={() => { setFormat(n); setManualBans([]); setHistory([]); }}>
-                  {n} heroes per player
+              {DRAFT_FORMATS.map(({ id, name }) => (
+                <Button className="hover:cursor-pointer" key={id} aria-pressed={format === id} variant={format === id ? "outline" : "default"}
+                  onClick={() => applyFormat(id)}>
+                  {name}
                 </Button>
               ))}
             </div>
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-2" role="group" aria-label="Choose Leader and Follower">
               {["me", "opponent"].map((w) => (
                 <Button
                   className="hover:cursor-pointer"
                   key={w}
+                  aria-pressed={leader === w}
                   variant={leader === w ? "outline" : "default"}
                   onClick={() => setLeader(w)}
                 >
@@ -259,20 +326,23 @@ export default function DraftFlow({
             <Button
               variant="outline"
               className="hover:cursor-pointer border-amber-500"
-              disabled={pool.length < format * 2 + (format === 6 ? 0 : 4)}
-              onClick={() => { setStarted(true); setSearch(""); }}
+              disabled={pool.length < minimum}
+              onClick={startDraft}
             >
               Start Draft
             </Button>
-            {pool.length < format * 2 + (format === 6 ? 0 : 4) && (
+            {pool.length < minimum && (
               <p className="text-xs text-red-300">
-                At least {format * 2 + (format === 6 ? 0 : 4)} unbanned heroes are needed{format === 6 ? "." : " before the four pre-bans."}.
+                At least {minimum} unbanned heroes are needed to start.
               </p>
             )}
           </div>
         ) : (
           <>
-            <div className="flex flex-wrap gap-2">
+            <p className="text-sm text-zinc-300">
+              Leader: {label(leader)} · Follower: {label(other(leader))}
+            </p>
+            {order.length > 0 && <div className="flex flex-wrap gap-2">
               {order.map((role, i) => {
                 const who = role === "leader" ? leader : other(leader);
                 return (
@@ -284,62 +354,50 @@ export default function DraftFlow({
                   </Badge>
                 );
               })}
-            </div>
+            </div>}
             <p className="font-semibold text-amber-300">
               {phase === "pre"
-                ? `Pre-ban ${pre.length + 1}/4 — ${label(phaseWho)} bans (${pre.filter((h) => h.who === phaseWho).length}/2)`
+                ? `Pre-ban ${pre.length + 1}/${preBans * 2} — ${label(phaseWho)} bans (${pre.filter((h) => h.who === phaseWho).length}/${preBans})`
                 : phase === "pick"
-                ? `Pick ${picks.length + 1}/${format * 2} — ${label(phaseWho)} chooses`
+                ? `Pick ${picks.length + 1}/${size * 2} — ${label(phaseWho)} chooses`
+                : arsenalPicking
+                  ? `${formatName} — ${phaseWho === "me" ? "Choose your next hero" : "Record opponent’s next hero"} (${(phaseWho === "me" ? myVisiblePicks : theirVisiblePicks).length}/${size})`
                 : phase === "self"
                   ? `Self Ban — ${label(phaseWho)} removes one of their own heroes`
                   : phase === "cross"
                     ? `Opponent Ban — ${label(phaseWho)} removes an enemy hero`
                     : `Draft complete — final ${finalSize} vs ${finalSize}`}
             </p>
-            {format !== 6 && picks.length === format * 2 && (
-              <div className="space-y-3" aria-label="Ban progress">
-                <ol className="grid gap-2 sm:grid-cols-2 lg:grid-cols-4">
-                  {steps.map((step, i) => {
-                    const recorded = history.find(
-                      (h) => h.phase === step.phase && h.who === step.who,
-                    );
-                    const active = phase !== "done" && activeBan === step;
-                    return (
-                      <li
-                        key={step.phase + step.who}
-                        aria-current={active ? "step" : undefined}
-                        className={`rounded-lg border p-3 text-sm ${active ? "border-amber-400 bg-amber-950/40 text-amber-200" : recorded ? "border-emerald-900 bg-emerald-950/20 text-emerald-300" : "border-zinc-800 text-zinc-500"}`}
-                      >
-                        <div className="font-semibold">
-                          {i + 1}. {step.title}
-                        </div>
-                        <div className="mt-1 text-xs">
-                          {recorded
-                            ? `✓ ${names.get(recorded.slug) ?? recorded.slug}`
-                            : active
-                              ? "Current step"
-                              : "Up next"}
-                        </div>
-                      </li>
-                    );
-                  })}
-                </ol>
-                {phase !== "done" && (
-                  <p
-                    className="rounded-lg border border-amber-900/50 bg-zinc-950 p-3 font-semibold text-amber-300"
-                    role="status"
-                  >
-                    {activeBan.instruction}
-                  </p>
-                )}
-              </div>
+            {preBans > 0 && (
+              <BanProgress title="Pre-ban order" names={names}
+                instruction={phase === "pre" ? (phaseWho === "me" ? "Choose a hero to exclude from this draft." : "Record the hero your opponent pre-banned.") : undefined}
+                steps={Array.from({ length: preBans * 2 }, (_, i) => ({
+                  who: i % 2 === 0 ? leader : other(leader),
+                  role: i % 2 === 0 ? "Leader" : "Follower",
+                  phase: "Pre-ban",
+                  recorded: pre[i],
+                  active: phase === "pre" && i === pre.length,
+                }))} />
+            )}
+            {steps.length > 0 && picks.length === size * 2 && (
+              <BanProgress title="Post-draft ban order" names={names} instruction={activeBan?.instruction}
+                steps={steps.map((step) => ({
+                  who: step.who,
+                  role: step.who === leader ? "Leader" : "Follower",
+                  phase: step.phase === "cross" ? "Opponent Ban" : "Self Ban",
+                  recorded: history.find((entry) => entry.phase === step.phase && entry.who === step.who),
+                  active: activeBan === step,
+                }))} />
             )}
           </>
         )}
       </div>
       {started && (
         <>
-          <p className="text-sm text-zinc-400">{banned.length} simulator pre-bans · {pool.length} active heroes{banned.length ? ` · Banned: ${banned.map((s) => names.get(s)).join(", ")}` : ""}</p>
+          <p className="text-sm text-zinc-400">{banned.length} {arsenal || barsenal ? "duplicate picks banned" : "simulator pre-bans"} · {pool.length} active heroes{banned.length ? ` · Banned: ${banned.map((s) => names.get(s)).join(", ")}` : ""}</p>
+          {history.at(-1)?.phase === "restore-mirrors" && (
+            <p role="status" className="text-sm text-amber-300">The remaining pool was too small. All mirror bans have been lifted.</p>
+          )}
           <details className="rounded border border-zinc-800 p-3">
             <summary className="cursor-pointer">Active draft statistics ({pool.length} heroes)</summary>
             <div className="mt-2 grid gap-1 sm:grid-cols-2 lg:grid-cols-3">
@@ -348,15 +406,15 @@ export default function DraftFlow({
           </details>
           <div className="grid gap-3 sm:grid-cols-2">
             {[
-              ["Your heroes", mine, "text-emerald-400"],
-              ["Opponent heroes", theirs, "text-red-400"],
-            ].map(([title, slugs, color]) => (
+              ["Your heroes", myVisiblePicks, "text-emerald-400", pendingPicks.me],
+              ["Opponent heroes", theirVisiblePicks, "text-red-400", pendingPicks.opponent],
+            ].map(([title, slugs, color, pending]) => (
               <div
                 key={title}
                 className="rounded-lg border border-zinc-800 bg-zinc-900/70 p-3"
               >
                 <h3 className={`mb-2 font-semibold ${color}`}>
-                  {title} ({slugs.length}/{format})
+                  {title} ({slugs.length}/{size})
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   {slugs.map((s) => (
@@ -365,13 +423,59 @@ export default function DraftFlow({
                       className={`rounded border border-zinc-700 px-2 py-1 text-sm ${[selfMine, selfTheirs, crossMine, crossTheirs].includes(s) ? "line-through opacity-40" : ""}`}
                     >
                       {names.get(s) ?? s}
+                      {pending.includes(s) && <span className="ml-1 text-xs text-amber-300">Pending</span>}
                     </span>
                   ))}
                 </div>
               </div>
             ))}
           </div>
-          {phase !== "done" ? (
+          {(phase === "self" || phase === "cross") && (
+            <section aria-label="Ban matchup comparison" className="space-y-2 rounded-lg border border-zinc-800 bg-zinc-900 p-3">
+              <h3 className="font-semibold">{phase === "cross" ? "Opponent Ban" : "Self Ban"} · Matchup overview</h3>
+              <div className="overflow-x-auto">
+                <table className="w-full text-sm">
+                  <caption className="mb-2 text-left text-xs text-zinc-400">
+                    {phase === "cross"
+                      ? "Win rates and game counts for fighters still available after any recorded Opponent Ban."
+                      : "Win rates and game counts for all fighters who passed Opponent Ban, including any recorded Self Ban."}
+                    {" "}Ratings are from your fighters’ perspective.
+                  </caption>
+                  <thead>
+                    <tr className="border-b border-zinc-700">
+                      <th scope="col" className="p-2 text-left">Your fighter</th>
+                      {theirAfterCross.map((slug) => (
+                        <th key={slug} scope="col" className="min-w-24 p-2 text-center">{names.get(slug) ?? slug}</th>
+                      ))}
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {myAfterCross.map((mine) => (
+                      <tr key={mine} className="border-b border-zinc-800 last:border-0">
+                        <th scope="row" className="p-2 text-left font-medium">{names.get(mine) ?? mine}</th>
+                        {theirAfterCross.map((theirs) => {
+                          const result = matchup(index, mine, theirs);
+                          const rating = matchupRating(result?.rate, result?.games);
+                          return (
+                            <td key={theirs} className="p-2 text-center">
+                              <div className={`space-y-1 rounded-md border p-2 ${rating.color}`}>
+                                <div className="font-semibold tabular-nums">{pct(result?.rate)}</div>
+                                {result && <div className="text-xs text-zinc-300">{result.games} games</div>}
+                                <MatchupRating rate={result?.rate} games={result?.games} />
+                              </div>
+                            </td>
+                          );
+                        })}
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          )}
+          {cannotFillArsenal ? (
+            <p role="alert" className="text-red-300">There are too few eligible heroes to fill both pools. Undo the last pick or reset the draft.</p>
+          ) : phase !== "done" ? (
             <>
               <div className="flex flex-wrap items-center justify-between gap-2">
                 <h3 className="text-lg font-semibold">
@@ -386,12 +490,12 @@ export default function DraftFlow({
                   className="rounded border border-zinc-700 bg-zinc-900 px-3 py-2 text-sm"
                 />
               </div>
-              {phaseWho === "me" && (
+              {(phaseWho === "me" || arsenalPicking) && (
                 <p className="text-sm text-zinc-400">
-                  {phase === "pick"
-                    ? theirs.length
-                      ? "Ranked by matchup results against opponent's current picks."
-                      : "No opponent picks yet: ranked by Roster WR (Overall WR fallback)."
+                  {picking
+                    ? pickOpponents.length
+                      ? `Ranked by matchup results against ${phaseWho === "me" ? "opponent’s" : "your"} current picks.`
+                      : "No opposing picks yet: ranked by Roster WR (Overall WR fallback)."
                     : phase === "pre" ? "Choose a hero to exclude from this draft." : `Recommendations maximize your worst-case projected final ${finalSize}v${finalSize} matchup. Missing matchup data is treated as neutral (50%) only in simulations.`}
                 </p>
               )}
@@ -415,6 +519,9 @@ export default function DraftFlow({
                         />
                         <div className="p-2 text-xs">
                           <div className="font-semibold">{h.name}</div>
+                          {arsenalPicking && pendingPicks[other(phaseWho)].includes(h.slug) && (
+                            <div className="mt-1 text-amber-300">Mirror pick · both copies will be banned</div>
+                          )}
                           {r && (
                             <div className="mt-1 text-amber-300">
                               #{r.rank} · {pct(r.score)}
@@ -432,17 +539,13 @@ export default function DraftFlow({
                         <MatchupInfo
                           hero={h.slug}
                           opponents={
-                            phase === "cross"
+                            picking
+                              ? pickOpponents
+                              : phase === "cross"
                               ? phaseWho === "me"
                                 ? myAfterCross
                                 : theirAfterCross
-                              : phaseWho === "me"
-                                ? phase === "pick"
-                                  ? theirs
-                                  : theirFinal
-                                : phase === "pick"
-                                  ? mine
-                                  : myFinal
+                              : phaseWho === "me" ? theirFinal : myFinal
                           }
                           index={index}
                           names={names}

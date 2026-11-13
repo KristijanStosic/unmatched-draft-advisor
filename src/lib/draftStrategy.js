@@ -1,13 +1,26 @@
+import { draftFormat } from "./draftFormats.js";
+
 export const PICK_ORDER = ["leader", "follower", "follower", "leader", "leader", "follower", "follower", "leader"];
 
 export function pickOrder(format = 4) {
   if (format === 6) return Array.from({ length: 12 }, (_, i) => i % 2 ? "follower" : "leader");
-  if (format === 5) return ["leader", "follower", "follower", "leader", "leader", "follower", "follower", "leader", "leader", "follower"];
+  if (format === "arsenal" || format === "barsenal") return [];
+  if (format === 5 || format === "arquest") return ["leader", "follower", "follower", "leader", "leader", "follower", "follower", "leader", "leader", "follower"];
   return PICK_ORDER;
 }
 
-export const draftPhase = (picks, cross, self, format = 4, pre = 4) =>
-  format !== 6 && pre < 4 ? "pre" : picks < format * 2 ? "pick" : format === 6 ? "done" : cross < 2 ? "cross" : self < 2 ? "self" : "done";
+export function draftPhase(picks, cross, self, format = 4, pre = draftFormat(format).preBans * 2) {
+  const { size, preBans } = draftFormat(format);
+  if (pre < preBans * 2) return "pre";
+  if (picks < size * 2) {
+    if (format === "arsenal" || format === "barsenal") return format;
+    return "pick";
+  }
+  if (format === 6) return "done";
+  if (cross < 2) return "cross";
+  if (self < 2) return "self";
+  return "done";
+}
 
 export function banSteps(leader) {
   const follower = leader === "me" ? "opponent" : "me";

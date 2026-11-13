@@ -43,7 +43,7 @@ test('self-ban UI ranks both players using only survivors of cross bans', () => 
   const myAfterCross=['a','b','c'], theirAfterCross=['e','f','g'];
   for(const phaseWho of ['me','opponent']) for(const already of [false,true]) {
     let args;
-    const ctx={phase:'self',phaseWho,index:new Map(),myAfterCross,theirAfterCross,
+    const ctx={phase:'self',picking:false,phaseWho,index:new Map(),myAfterCross,theirAfterCross,
       myFinal:['a','b'],theirFinal:['e','f'],selfMine:already?'c':null,selfTheirs:already?'g':null,
       recommendSelfBans:(...values)=>{args=values;return values[1].map(slug=>({slug,score:50}));}};
     const rows=calculate(ctx);

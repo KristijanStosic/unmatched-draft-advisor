@@ -169,7 +169,6 @@ export default function App() {
                 <Button
                   className="hover:cursor-pointer"
                   variant={screen === "simulator" ? "default" : "outline"}
-                  disabled={validRoster.length < 12}
                   onClick={() => selectScreen("simulator")}
                 >
                   Draft Simulator
