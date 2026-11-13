@@ -1,0 +1,66 @@
+.hero-wheel {
+  position: relative;
+  width: min(100%, 420px);
+  margin: 0 auto;
+  padding: 12px;
+  container-type: inline-size;
+}
+
+.hero-wheel-disc {
+  position: relative;
+  aspect-ratio: 1;
+  overflow: hidden;
+  border: 3px solid #d6a952;
+  border-radius: 50%;
+  box-shadow: 0 0 0 5px #27272a;
+}
+
+.hero-wheel-spinning {
+  animation: hero-wheel-spin var(--spin-time) cubic-bezier(0.12, 0.65, 0.16, 1) forwards;
+}
+
+@keyframes hero-wheel-spin {
+  from { transform: rotate(0); }
+  to { transform: rotate(var(--spin-angle)); }
+}
+
+.hero-wheel-pointer {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 28px;
+  transform: translateX(-50%);
+  background: #fde68a;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+
+.hero-wheel-spoke {
+  position: absolute;
+  inset: 0;
+}
+
+.hero-wheel-spoke span {
+  position: absolute;
+  top: 7%;
+  left: 50%;
+  height: 36%;
+  transform: translateX(-50%);
+  writing-mode: vertical-rl;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: var(--label-size);
+  font-weight: 700;
+  color: white;
+  text-shadow: 0 1px 3px #09090b;
+}
+
+.hero-wheel-hub {
+  position: absolute;
+  inset: 44%;
+  border: 2px solid #d6a952;
+  border-radius: 50%;
+  background: #18181b;
+}

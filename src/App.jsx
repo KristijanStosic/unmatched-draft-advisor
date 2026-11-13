@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { Swords, Search, BarChart3, CheckCheck } from "lucide-react";
 import RandomMapGenerator from "@/components/RandomMapGenerator";
+import RandomHeroGenerator from "@/components/RandomHeroGenerator";
 import HeroCard from "@/components/HeroCard";
 import RosterPanel from "@/components/RosterPanel";
 import StatisticsDialog from "@/components/StatisticsDialog";
@@ -162,6 +163,13 @@ export default function App() {
                 >
                   Random Map Generator
                 </Button>
+                <Button
+                  className="hover:cursor-pointer"
+                  variant={screen === "hero-generator" ? "default" : "outline"}
+                  onClick={() => setScreen("hero-generator")}
+                >
+                  Random Hero Generator
+                </Button>
               </div>
             </nav>
             <section aria-label="Statistics" className="space-y-2">
@@ -190,14 +198,18 @@ export default function App() {
         <section className="flex flex-wrap items-center justify-between gap-3">
           <div>
             <h2 className="text-2xl font-bold">
-              {screen === "maps"
+              {screen === "hero-generator"
+                ? "Random Hero Generator"
+                : screen === "maps"
                 ? "Random Map Generator"
                 : screen === "roster"
                   ? "Heroes database"
                   : "Draft Simulator"}
             </h2>
             <p className="mt-1 text-sm text-zinc-400">
-              {screen === "maps"
+              {screen === "hero-generator"
+                ? "Build tiers and draw heroes without repeats."
+                : screen === "maps"
                 ? "Generate random maps for every table. Maps may repeat between tables."
                 : screen === "roster"
                   ? "Choose heroes and save your roster"
@@ -221,7 +233,10 @@ export default function App() {
         <div hidden={screen !== "maps"}>
           <RandomMapGenerator />
         </div>
-        {screen === "maps" ? null : screen === "simulator" ? (
+        <div hidden={screen !== "hero-generator"}>
+          <RandomHeroGenerator heroes={heroes} isLoading={isLoading} />
+        </div>
+        {screen === "maps" || screen === "hero-generator" ? null : screen === "simulator" ? (
           <DraftFlow
             onBannedChange={setDraftBans}
             heroes={heroes}

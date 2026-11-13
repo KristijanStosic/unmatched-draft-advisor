@@ -1,5 +1,14 @@
 # Unmatched Draft Advisor — Netlify
 
+## Random Hero Generator
+
+1. Otvori **Random Hero Generator** pored **Random Map Generatora**. Upiši naziv i klikni **Add Tier**.
+2. Klikni slike heroja da ih dodaš u aktivni tier ili ukloniš iz njega. **Active tier** menja tier iz kog izvlačiš.
+3. Izaberi **Spin the Wheel** ili **Hero Roulette** i pokreni izvlačenje. Oba režima dele istoriju aktivnog tiera. Svaki preostali heroj ima jednaku šansu, a animacija prikazuje unapred izvučenog pobednika.
+4. **Reset Draw** briše istoriju samo aktivnog tiera i vraća sve njegove trenutne članove u izvlačenje. Tierovi i istorija čuvaju se u lokalnom skladištu pregledača.
+
+Za lokalno pokretanje raspakuj ZIP i u folderu projekta pokreni `npm ci` i `npm run dev`. Za Netlify Drop možeš odmah da upotrebiš folder `dist/` iz ZIP-a.
+
 ## Hero vs Available Pool
 
 U Matchup Exploreru izaberi zasebnu opciju **Hero vs Available Pool**, zatim heroja iz dropdowna. Tabela prikazuje Opponent, dinamičku kolonu `<selected hero> WR`, Opponent WR i Games. Protivnici su trenutno selektovani Available Heroes iz rostera, bez izabranog heroja i banova iz aktivnog simulatora (pre-ban, opponent ban i self-ban). Dropdown prikazuje samo heroje iz trenutnog Available Heroes poola, bez banovanih. Ako izabrani heroj više nije u poolu, prikaz se vraća na izbor heroja.
